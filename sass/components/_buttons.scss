@@ -1,0 +1,28 @@
+.btn{
+    width: 150px;
+    text-decoration: none;
+    background: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 5%;
+    border: 1px solid $rounded-button ;
+    border-radius: 25px;
+    padding: 2% 1%;
+
+    &--rounded{
+        position: relative;
+        // top: 30px;
+        color:$dark-color;
+        
+        
+        &--sucess{
+            background-color: $primary-color;
+            color: $light-color;
+            border: none;
+        }
+
+        }
+
+   
+       
+}

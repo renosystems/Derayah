@@ -1,0 +1,93 @@
+.card-row {
+  display: flex;
+  margin-bottom: 42px;
+}
+
+.container {
+  width: 1070px;
+  margin: 0 auto;
+}
+
+.Depcard {
+  margin-left: 50px;
+  margin-top: 65px;
+}
+
+.topMenu {
+  margin: 0;
+  padding: 0;
+  height: 90px;
+  background-color: #F9F9FB;
+  width: 95%;
+  direction: rtl;
+  font-size: 18px;
+  font-weight: bold;
+  color: #16151A;
+}
+.topMenu__text {
+  margin-left: 10px;
+}
+
+.btn {
+  width: 150px;
+  text-decoration: none;
+  background: transparent;
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 5%;
+  border: 1px solid rgba(207, 207, 207, 0.7725490196);
+  border-radius: 25px;
+  padding: 2% 1%;
+}
+.btn--rounded {
+  position: relative;
+  color: #242424;
+}
+.btn--rounded--sucess {
+  background-color: #510B76;
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+.side-menu {
+  width: 7%;
+  height: 100vh;
+  background-color: #3C0857;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 50px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+.side-menu--img {
+  width: 40px;
+  height: 35px;
+}
+.side-menu--text {
+  font-size: 16px;
+  font-weight: 500;
+  transform: rotate(270deg);
+  margin-top: 100px;
+  margin-bottom: 90px;
+}
+.side-menu--text-light {
+  color: #A9AFC3;
+  font-size: 12px;
+  transform: rotate(270deg);
+  margin-top: 70px;
+}
+.side-menu--line {
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  width: 1px;
+  height: 55px;
+  background-color: rgba(255, 136, 0, 0.6431372549);
+}
+
+.image-slider {
+  width: 93%;
+  height: 85vh;
+}/*# sourceMappingURL=main.css.map */

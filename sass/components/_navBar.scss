@@ -1,0 +1,14 @@
+.topMenu{
+    margin: 0;
+    padding: 0;
+    height: 90px;
+    background-color: $menu-color;
+    width: 95%;
+    direction: rtl;
+    font-size: 18px;
+    font-weight: bold;
+    color: $text-color;
+    &__text{
+        margin-left: 10px;
+    }
+}

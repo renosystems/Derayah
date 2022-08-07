@@ -1,0 +1,42 @@
+.side-menu{
+    width: 7%;
+    height: 100vh;
+    background-color: $accent-purple;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    color: $light-color;
+    &--img{
+        width: 40px;
+        height: 35px;
+    }
+    &--text{
+        font-size: 16px;
+        font-weight: 500;
+        transform: rotate(270deg);
+        margin-top: 100px;
+        margin-bottom: 90px;
+        &-light{
+            color: $side-menu-text;
+            font-size: 12px;
+            transform: rotate(270deg);
+            margin-top: 70px;
+        }
+    }
+    &--line{
+        position: absolute;
+        left: 50%;
+        top: 85%;
+        width: 1px;
+        height: 55px;
+        background-color: $orange-color;
+    }
+}
+
+.image-slider{
+    width: 93%;
+    height: 85vh;
+}
