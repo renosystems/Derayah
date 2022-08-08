@@ -1,7 +1,7 @@
 @import "abstract/variables";
 ////////vendors/////
 ///base////
-// @import "base/reset";
+@import "base/reset";
 
 //layout///
 @import "layout/features";
@@ -9,3 +9,5 @@
 @import "components/navBar";
 @import "components/buttons";
 @import "components/side_menu";
+@import "components/InvestSection";
+@import "components/instCard";
