@@ -1,0 +1,36 @@
+.awardsSection{
+    width: 100%;
+    height: 60vh;
+    text-align: center;
+    background-color: $light-color;
+    direction: rtl;
+    padding-top: 3%;
+
+    &-line{
+        display: inline-block;
+        margin: auto;
+        height: 1px;
+        width: 50px;
+        background-color: $side-menu-text;
+    }
+
+    span{
+        color: $side-menu-text;
+        font-size: 16px;
+    }
+    h6{
+        margin: 1% 0;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    p{
+        font-size: 18px;
+        color: $GrayScale;
+        margin: 2% 0;
+    }
+    img{
+        height: 50px;
+        width: 60px;
+        margin: 0 10px;
+    }
+}

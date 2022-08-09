@@ -210,4 +210,39 @@ body {
   font-weight: 600;
   color: #242424;
   margin-top: 15px;
+}
+
+.awardsSection {
+  width: 100%;
+  height: 60vh;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  direction: rtl;
+  padding-top: 3%;
+}
+.awardsSection-line {
+  display: inline-block;
+  margin: auto;
+  height: 1px;
+  width: 50px;
+  background-color: #A9AFC3;
+}
+.awardsSection span {
+  color: #A9AFC3;
+  font-size: 16px;
+}
+.awardsSection h6 {
+  margin: 1% 0;
+  font-size: 50px;
+  font-weight: bold;
+}
+.awardsSection p {
+  font-size: 18px;
+  color: #6c6b80;
+  margin: 2% 0;
+}
+.awardsSection img {
+  height: 50px;
+  width: 60px;
+  margin: 0 10px;
 }/*# sourceMappingURL=main.css.map */
