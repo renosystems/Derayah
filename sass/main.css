@@ -17,6 +17,11 @@ body {
   position: relative;
 }
 
+.rot {
+  transform: rotate(270deg);
+  display: inline-block;
+}
+
 .card-row {
   display: flex;
   margin-bottom: 42px;
@@ -347,4 +352,116 @@ body {
   background-color: #EE8122;
   margin-left: 5px;
   display: inline-block;
+}
+
+.investFund {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.investFund-left {
+  position: relative;
+  text-align: right;
+  direction: rtl;
+  padding-top: 5%;
+  padding-right: 2%;
+}
+.investFund-left h6 {
+  font-size: 34px;
+  font-weight: 500;
+}
+.investFund-left p {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 30px 0;
+}
+.investFund-left h5 {
+  font-size: 34px;
+  font-weight: 500;
+  margin-top: 5%;
+  margin-right: 10px;
+  color: linear-gradient(to bottom, #242424, rgb(255, 255, 255));
+}
+.investFund-left-print {
+  width: 320px;
+  height: 225px;
+}
+.investFund-left-text {
+  margin-top: 45%;
+  margin-right: 2px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.investFund-left-play {
+  width: 50px;
+  height: 50px;
+  display: inline;
+  position: absolute;
+  top: 65%;
+  right: 53%;
+}
+.investFund-right {
+  position: relative;
+  background-color: #510B76;
+  text-align: right;
+  direction: rtl;
+  color: rgb(255, 255, 255);
+  padding-right: 15%;
+  padding-top: 3%;
+}
+.investFund-right-side {
+  height: 100vh;
+  width: 80px;
+  background-color: #3C0857;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.investFund-right p {
+  font-size: 14px;
+  display: inline-block;
+}
+.investFund-right-line {
+  display: inline-block;
+  height: 1px;
+  width: 50px;
+  background-color: rgb(255, 255, 255);
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.investFund-right h6 {
+  font-size: 44px;
+  font-weight: bold;
+}
+.investFund-right-list {
+  width: 480px;
+  height: 60px;
+  border-radius: 7px;
+  padding-top: 2%;
+  padding-right: 3%;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+.investFund-right-list-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #743c91;
+  display: inline-block;
+}
+.investFund-right-list span {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin-left: 5px;
+}
+.investFund-right-list i {
+  color: #242424;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.investFund-right-list.active {
+  background-color: rgb(255, 255, 255);
+  color: #743c91;
 }/*# sourceMappingURL=main.css.map */
