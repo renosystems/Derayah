@@ -1,7 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: TheMixArabic;
 }
+@font-face {
+    font-family: TheMixArabic;
+    src: url(../../font/TheMixArabic/ArbFonts.com-\(4\)/ArbFONTS-TheMixArab-Regular.ttf) format(".ttf");
+}
+
 body{
     margin: 0;
     padding: 0;
