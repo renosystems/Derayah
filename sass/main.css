@@ -478,4 +478,69 @@ body {
 .investFund-right-list.active {
   background-color: rgb(255, 255, 255);
   color: #743c91;
+}
+
+.derayahSmart {
+  width: 100%;
+  height: 100vh;
+  background: url(../../Images/derayahSmartSecbg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  direction: rtl;
+  position: relative;
+}
+.derayahSmart-rightDivCover {
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: linear-gradient(to right, rgb(255, 255, 255), #502269);
+  opacity: 0.01;
+}
+.derayahSmart-rightDiv {
+  width: 50%;
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  padding-top: 15%;
+  padding-right: 17%;
+}
+.derayahSmart-rightDiv p {
+  font-size: 16px;
+  display: inline-block;
+}
+.derayahSmart-rightDiv h5 {
+  font-size: 62px;
+  font-weight: bold;
+}
+.derayahSmart-rightDiv span {
+  font-size: 18px;
+}
+.derayahSmart-rightDiv-line {
+  width: 50px;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  margin-right: 15px;
+}
+.derayahSmart-rightDiv-readMore {
+  margin-top: 50px;
+  width: 80px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.derayahSmart-btnPlay {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  z-index: 1;
+  margin-top: 24%;
+  margin-right: 47%;
+  border-radius: 30px;
+  background-color: #EE8122;
+  box-shadow: 0 0 0 5px #8b5f44;
+}
+.derayahSmart-btnPlay i {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  margin-top: 30%;
 }/*# sourceMappingURL=main.css.map */
