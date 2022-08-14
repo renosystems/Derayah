@@ -1,11 +1,12 @@
+@font-face {
+    font-family: TheMixArabic;
+    src: url(../../font/TheMixArabic/TheMixArabic/TheMixArabic-Plain.woff2) format(".woff2");
+}
+
 *{
     margin: 0;
     padding: 0;
     font-family: TheMixArabic;
-}
-@font-face {
-    font-family: TheMixArabic;
-    src: url(../../font/TheMixArabic/ArbFonts.com-\(4\)/ArbFONTS-TheMixArab-Regular.ttf) format(".ttf");
 }
 
 body{
