@@ -28,11 +28,11 @@
     display: inline-block;
   }
   h1 {
-    font-size: 54px;
+    font-size: 48px;
     font-weight: bold;
   }
   h6 {
-    font-size: 20px;
+    font-size: 18px;
     color: $GrayScale;
     margin-top: 5px;
     margin-bottom: 40px;
@@ -64,10 +64,12 @@
         font-weight: bold;
         font-size: 32px;
         color: $blue-color;
+        width: 250px;
       }
       h5 {
-        font-size: 14px;
+        font-size: 12px;
         color: $dark-blue;
+        width: 250px;
       }
       p {
         font-size: 15px;
@@ -186,8 +188,9 @@
         color: $blue-color;
       }
       h5 {
-        font-size: 14px;
+        font-size: 12px;
         color: $dark-blue;
+        width: 250px;
       }
       p {
         font-size: 15px;

@@ -1,12 +1,24 @@
 @font-face {
-    font-family: TheMixArabic;
-    src: url(../../font/TheMixArabic/TheMixArabic/TheMixArabic-Plain.woff2) format(".woff2");
+    font-family: "TheMixArabic";
+    src: url(../../font/TheMixArabic/TheMixArabic-Light.eot);
+    src: url(../../font/TheMixArabic/TheMixArabic-Light.woff) format(".woff"),
+    url(../../font/TheMixArabic/TheMixArabic-Light.otf) format(".opentype"),
+    url(../../font/TheMixArabic/TheMixArabic-Light.svg) format(".svg");
+    
+}
+@font-face {
+    font-family: "TheMixArabic";
+    src: url(../../font/TheMixArabic/TheMixArabic-Bold.eot);
+    src: url(../../font/TheMixArabic/TheMixArabic-Bold.woff) format(".woff"),
+    url(../../font/TheMixArabic/TheMixArabic-Bold.otf) format(".opentype"),
+    url(../../font/TheMixArabic/TheMixArabic-Bold.svg) format(".svg");
+    font-weight: bold;
 }
 
 *{
     margin: 0;
     padding: 0;
-    font-family: TheMixArabic;
+    // font-family: 'TheMixArabic';
 }
 
 body{
