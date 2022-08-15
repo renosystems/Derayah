@@ -1,0 +1,32 @@
+.InvestCard{
+    width: 170px;
+    height: 170px;
+    border-radius: 25px;
+    background-color: $light-color;
+    display: inline-block;
+    padding-top: 5%;
+    text-align: center;
+    &-secondCard{
+        position: absolute;
+        right: 190px;
+        top: 40px;
+    }
+    &-iconDiv{
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        border-radius: 15px;
+        background-color: $secondry-color;
+
+        i{
+            color: $orange-color;
+            font-size: 18px;
+            margin: 30% 30%;
+        }
+    }
+    h5{
+        font-weight: 600;
+        color: $dark-color;
+        margin-top: 15px;
+    }
+}

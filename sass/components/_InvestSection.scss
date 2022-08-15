@@ -1,0 +1,72 @@
+.WhyInvestment{
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../../Images/SecondSection_bg.png);
+    background-color: $primary-color;
+    background-size: 45%;
+    background-repeat: no-repeat;
+    color: $light-color;
+    text-align: right;
+    padding-top: 13%;
+
+    &-left-section{
+        direction: rtl;
+        }
+
+    &-right-section{
+        padding-right: 15%;
+        padding-top: 1%;
+
+        p{
+            font-size: 12px;
+            display: inline;
+        }
+
+        h6{
+            font-size: 40px;
+            font-weight: bold;
+            margin: 5% 0;
+        }
+        span{
+            margin-left: 20%;
+            margin-top: 15%;
+            font-size: 14px;
+        }
+        a{
+            text-decoration: none;
+            color: $light-color;
+            font-size: 10px;
+        }
+        &-info{
+            position: absolute;
+            right: 15%;
+            padding-bottom: 5px;
+            width: 70px;
+            border-bottom: .5px solid $light-color;
+        }
+        &-watch{
+            margin-top: 15%;
+            margin-right: 5%;
+            direction: rtl;
+            &--playV{
+                width: 30px;
+                height: 30px;
+                border-radius: 15px;
+                background-color: $orange-color;
+                box-shadow: 5px;
+                text-align: center;
+                display: inline-block;
+                i{
+                    margin: auto;
+                    font-size: 10px;
+                }
+            }
+            img{
+                width: 65%;
+                height: 15%;
+            }
+        }
+    }
+}

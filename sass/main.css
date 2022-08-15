@@ -1,3 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.ORG {
+  color: #EE8122;
+}
+
+.rel {
+  position: relative;
+}
+
 .card-row {
   display: flex;
   margin-bottom: 42px;
@@ -84,10 +103,111 @@
   top: 85%;
   width: 1px;
   height: 55px;
-  background-color: rgba(255, 136, 0, 0.6431372549);
+  background-color: #EE8122;
 }
 
 .image-slider {
   width: 93%;
   height: 85vh;
+}
+
+.WhyInvestment {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../../Images/SecondSection_bg.png);
+  background-color: #510B76;
+  background-size: 45%;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+  text-align: right;
+  padding-top: 13%;
+}
+.WhyInvestment-left-section {
+  direction: rtl;
+}
+.WhyInvestment-right-section {
+  padding-right: 15%;
+  padding-top: 1%;
+}
+.WhyInvestment-right-section p {
+  font-size: 12px;
+  display: inline;
+}
+.WhyInvestment-right-section h6 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 5% 0;
+}
+.WhyInvestment-right-section span {
+  margin-left: 20%;
+  margin-top: 15%;
+  font-size: 14px;
+}
+.WhyInvestment-right-section a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 10px;
+}
+.WhyInvestment-right-section-info {
+  position: absolute;
+  right: 15%;
+  padding-bottom: 5px;
+  width: 70px;
+  border-bottom: 0.5px solid rgb(255, 255, 255);
+}
+.WhyInvestment-right-section-watch {
+  margin-top: 15%;
+  margin-right: 5%;
+  direction: rtl;
+}
+.WhyInvestment-right-section-watch--playV {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #EE8122;
+  box-shadow: 5px;
+  text-align: center;
+  display: inline-block;
+}
+.WhyInvestment-right-section-watch--playV i {
+  margin: auto;
+  font-size: 10px;
+}
+.WhyInvestment-right-section-watch img {
+  width: 65%;
+  height: 15%;
+}
+
+.InvestCard {
+  width: 170px;
+  height: 170px;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  padding-top: 5%;
+  text-align: center;
+}
+.InvestCard-secondCard {
+  position: absolute;
+  right: 190px;
+  top: 40px;
+}
+.InvestCard-iconDiv {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 15px;
+  background-color: #FAF9F9;
+}
+.InvestCard-iconDiv i {
+  color: #EE8122;
+  font-size: 18px;
+  margin: 30% 30%;
+}
+.InvestCard h5 {
+  font-weight: 600;
+  color: #242424;
+  margin-top: 15px;
 }/*# sourceMappingURL=main.css.map */
