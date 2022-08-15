@@ -1,6 +1,6 @@
 .derayahSmart{
     width: 100%;
-    height: 100vh;
+    height: 100vmin;
     background: url(../../Images/derayahSmartSecbg.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@
 
     &-rightDivCover{
         width: 50%;
-        height: 100vh;
+        height: 100%;
         position: absolute;
         right: 0;
         top: 0;
@@ -18,7 +18,7 @@
     }
     &-rightDiv{
         width: 50%;
-        height: 100vh;
+        height: 100%;
         color: $light-color;
         padding-top: 10%;
         padding-right: 10%;

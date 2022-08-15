@@ -1,6 +1,6 @@
 .derayahServices {
   width: 100%;
-  height: 185vh;
+  height: 185vmin;
   background-color: $servicesSection-bgColor;
   text-align: center;
   direction: rtl;
@@ -9,7 +9,7 @@
 
   &-sideDiv {
     width: 7%;
-    height: 185vh;
+    height: 100%;
     position: absolute;
     top: 0;
     right: 0;
