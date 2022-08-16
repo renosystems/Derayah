@@ -1,6 +1,6 @@
 .footerSec{
     width: 100%;
-    height: 50vmin;
+    height: 55vmin;
     margin: 0;
     padding: 0;
     position: relative;
@@ -65,8 +65,94 @@
         position: absolute;
         width: 93%;
         height: 100%;
-        background-color: $primary-color;
+        background-color: $footerBg;
         display: inline-block;
         margin: 0;
+        direction: rtl;
+        padding-top: 2%;
+        padding-right:10%;
+        padding-left:25%;
+        color: $light-color;
+        img{
+            width: 65px;
+            height: 55px;
+        }
+        span{
+            font-size: 9px;
+        }
+        p{
+            font-size: 15px;
+            margin: 0;
+            width: 100%;
+        }
+        ul,li{
+            width: 140px;
+        }
+        &-header{
+            font-size: 15px;
+            color: $footer-text;
+        }
+        &-downloadImg{
+            height: 40px;
+            width: 100px;
+            margin-top: 10px;
+            background: url(../../Images/download1.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        &-downloadImg2{
+            height: 40px;
+            width: 100px;
+            margin-top: 10px;
+            background: url(../../Images/download2.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        &-input-group{
+            direction: ltr;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        &-footer-input{
+            height: 40px;
+            width: 200px;
+            font-size: 12px;
+            color: $footer-blacholder;
+            padding-right: 5px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            text-align: right;
+            border: none;
+        }
+        &-Sub-btn{
+            width: 70px;
+            height: 40px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            font-size: 13px;
+            color: $light-color;
+            background-color: $sub-btn;
+            border: none;
+        }
+        &-footer-icon{
+            width: 25px;
+            height: 25px;
+            border-radius: 12.5px;
+            background-color: $side-menu-text;
+            display: inline-block;
+            text-align: center;
+            margin-left: 17px;
+            padding-left: 5%;
+
+            i{
+                font-size: 16px;
+                color: $dark-color;
+                // padding-right: 10px;
+            }
+        }
     }
 }
