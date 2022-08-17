@@ -9,6 +9,7 @@
     font-size: 14px;
     font-weight: 400;
     color: $light-color;
+    padding-bottom: 45%;
     &--img{
         width: 40px;
         height: 35px;
@@ -29,7 +30,7 @@
     &--line{
         position: absolute;
         left: 50%;
-        top: 85%;
+        top: 80%;
         width: 1px;
         height: 55px;
         background-color: $orange-color;
@@ -38,5 +39,5 @@
 
 .image-slider{
     width: 93%;
-    height: 85vh;
+    height: 520px;
 }

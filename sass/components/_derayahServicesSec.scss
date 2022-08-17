@@ -1,11 +1,12 @@
 .derayahServices {
   width: 100%;
-  height: 185vmin;
+  height: 185%;
   background-color: $servicesSection-bgColor;
   text-align: center;
   direction: rtl;
   position: relative;
   padding-top: 5%;
+  padding-bottom: 3%;
 
   &-sideDiv {
     width: 7%;

@@ -96,6 +96,7 @@ html, body {
   font-size: 14px;
   font-weight: 400;
   color: rgb(255, 255, 255);
+  padding-bottom: 45%;
 }
 .side-menu--img {
   width: 40px;
@@ -117,7 +118,7 @@ html, body {
 .side-menu--line {
   position: absolute;
   left: 50%;
-  top: 85%;
+  top: 80%;
   width: 1px;
   height: 55px;
   background-color: #EE8122;
@@ -125,7 +126,7 @@ html, body {
 
 .image-slider {
   width: 93%;
-  height: 85vh;
+  height: 520px;
 }
 
 .WhyInvestment {
@@ -133,7 +134,7 @@ html, body {
   position: relative;
   width: 100%;
   height: 100%;
-  background: url(../../Images/SecondSection_bg.png);
+  background: url(../Images/SecondSection_bg.png);
   background-color: #510B76;
   background-size: 45%;
   background-repeat: no-repeat;
@@ -231,11 +232,12 @@ html, body {
 
 .awardsSection {
   width: 100%;
-  height: 60vmin;
+  height: 60%;
   text-align: center;
   background-color: rgb(255, 255, 255);
   direction: rtl;
   padding-top: 3%;
+  padding-bottom: 10%;
 }
 .awardsSection-line {
   display: inline-block;
@@ -268,12 +270,13 @@ html, body {
   position: relative;
   margin: 0;
   width: 100%;
-  height: 100vmin;
-  background: url(../../Images/marketSectionbg.png);
+  height: 100%;
+  background: url(../Images/marketSectionbg.png);
   background-color: #20042f;
   background-size: 50%;
   background-position: right;
   background-repeat: no-repeat;
+  padding-bottom: 7%;
 }
 .market-section-left {
   direction: rtl;
@@ -489,12 +492,13 @@ html, body {
 
 .derayahSmart {
   width: 100%;
-  height: 100vmin;
-  background: url(../../Images/derayahSmartSecbg.png);
+  height: 100%;
+  background: url(../Images/derayahSmartSecbg.png);
   background-size: 100%;
   background-repeat: no-repeat;
   direction: rtl;
   position: relative;
+  padding-bottom: 15%;
 }
 .derayahSmart-rightDivCover {
   width: 50%;
@@ -554,12 +558,13 @@ html, body {
 
 .derayahServices {
   width: 100%;
-  height: 185vmin;
+  height: 185%;
   background-color: #f9f6fd;
   text-align: center;
   direction: rtl;
   position: relative;
   padding-top: 5%;
+  padding-bottom: 3%;
 }
 .derayahServices-sideDiv {
   width: 7%;
@@ -836,14 +841,15 @@ html, body {
 
 .newestInDerarah {
   width: 100%;
-  height: 120vmin;
-  background-color: rgba(207, 207, 207, 0.7725490196);
+  height: 120%;
+  background-color: #fcfcfc;
   position: relative;
   padding-top: 7%;
   padding-right: 15%;
   direction: rtl;
   text-align: right;
   margin: 0;
+  padding-bottom: 5%;
 }
 .newestInDerarah-sideDiv {
   width: 7%;
@@ -899,7 +905,7 @@ html, body {
 .newestInDerarah-leftImg {
   width: 350px;
   height: 400px;
-  background: url(../../Images/leftImg.png);
+  background: url(../Images/leftImg.png);
   background-size: 100%;
   background-repeat: no-repeat;
   border-radius: 20px;
@@ -918,7 +924,7 @@ html, body {
 
 .footerSec {
   width: 100%;
-  height: 60vmin;
+  height: 60%;
   margin: 0;
   padding: 0;
   position: relative;
@@ -992,6 +998,7 @@ html, body {
   padding-right: 10%;
   padding-left: 25%;
   color: rgb(255, 255, 255);
+  padding-bottom: 26%;
 }
 .footerSec-body img {
   width: 65px;

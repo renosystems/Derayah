@@ -278,7 +278,7 @@
       <!-- investment funds section -->
       <div class="row investFund">
         <div class="col-6 investFund-left">
-          <h6>صناديق دراية <br> للأسهم المالية</h6>
+          <h6 id="TitleText">صناديق دراية <br> للأسهم المالية</h6>
           <p>المشاركة في البورصة مع تحقيق عوائد علي شكل توزيع <br> أرباح بشكل
             دوري علي مالكي الوحدات المشاركة</p>
           <img src="./Images/print.png" alt="" class="ORG
@@ -287,7 +287,7 @@
             <span class="ORG investFund-left-text">كيف يعمل</span></div>
           <img src="./Images/play.png" alt="" class="ORG investFund-left-play">
           <div>
-            <h5>استثمار سوبر ماركت <br> دراية المالية</h5>
+            <h5 id="fadedText">استثمار سوبر ماركت <br> دراية المالية</h5>
             <p>المشاركة في البورصة مع تحقيق عوائد علي شكل توزيع <br> أرباح بشكل
               دوري علي مالكي الوحدات المشاركة</p>
           </div>
@@ -302,18 +302,18 @@
               شكل أرباح بشكل دوري<br>
               للمالكين المشاركين في السوق</p>
           </div>
-          <div class="investFund-right-list active">
+          <div class="investFund-right-list active" onclick="openLeftSection('DivT2', this)">
             <div class="investFund-right-list-icon"><i class="fa
                 fa-chart-column"></i></div>
-            <span>صناديق دراية للأسهم المالية </span>
+            <span id="DivT1">صناديق دراية للأسهم المالية </span>
           </div>
-          <div class="investFund-right-list">
+          <div class="investFund-right-list" onclick="openLeftSection('DivT3', this)">
             <div class="investFund-right-list-icon"><i class="fa fa-clock"></i></div>
-            <span>تقديم المشورة الاستثمارية</span>
+            <span id="DivT2">استثمار سوبر ماركت دراية المالية </span>
           </div>
-          <div class="investFund-right-list">
+          <div class="investFund-right-list" onclick="openLeftSection('DivT1', this)">
             <div class="investFund-right-list-icon"><i class="fa fa-home"></i></div>
-            <span>صناديق دراية المالية العقارية</span>
+            <span id="DivT3">صناديق دراية المالية العقارية</span>
           </div>
         </div>
       </div>
@@ -555,5 +555,6 @@
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
     </body>
   </html>
