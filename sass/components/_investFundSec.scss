@@ -94,8 +94,8 @@
                 margin-right: 10px;
             }
             &-play{
-                top: 60%;
-                right: 52%;
+                top: 62%;
+                right: 54%;
             }
             
         }
@@ -154,7 +154,7 @@
                 display: none;
             }
             &-play{
-                top: 83%;
+                top: 85%;
                 right: 43%;
             }
         }
@@ -203,5 +203,23 @@
             margin-bottom: 5px;
         }
         
+    }
+    &-btnPlay{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        z-index: 1;
+        // margin-top: 90%;
+        // margin-right: 47%;
+        border-radius: 15px;
+        background-color: $orange-color;
+        box-shadow: 0 0 0 5px #d89267;
+
+        i{
+            font-size: 15px;
+            color: $light-color;
+            margin-right:15%;
+            margin-top: 30%;
+        }
     }
 }
