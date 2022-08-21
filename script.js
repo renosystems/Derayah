@@ -18,4 +18,10 @@ function openLeftSection(sectionName, elmnt) {
     document.getElementById("TitleText").textContent=elmnt.children[1].textContent;
     document.getElementById("TitleText").style.width='270px';
   }
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+  }
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
   

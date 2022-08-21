@@ -1,28 +1,52 @@
 .footerSec{
-    width: 100%;
-    height: 60%;
-    margin: 0;
+    @include devices(tablet) {
+        width: 100%;
+        height: 60%;
+        &-side{
+            position: absolute;
+            width: 7%;
+            height: 100%;
+            background-color: $light-color;
+            display: inline-block;
+            margin: 0;
+        }
+        &-callUs{
+            height: 100px;
+            width: 60%;
+            margin-left: 20%;
+            top: -50px;
+            padding: 25px 90px;
+        }
+    }
+     @include devices(mobile) {
+        width: 100vw;
+        height: 1000px;
+        &-side{
+            display: none;
+        }
+        &-callUs{
+            // height: 100px;
+            width: 95%;
+            margin-left: 2%;
+            text-align: center;
+            top: -100px;
+            padding: 20px 0;
+            &-btn{
+                margin: auto;
+            }
+        }
+    }
+   
     padding: 0;
     position: relative;
-    &-side{
-        position: absolute;
-        width: 7%;
-        height: 100%;
-        background-color: $light-color;
-        display: inline-block;
-        margin: 0;
-    }
+    margin: 0;
+   
     &-callUs{
-        height: 100px;
-        width: 60%;
         position: absolute;
-        top: -50px;
-        margin-left: 20%;
         background-color: $list-icon-color;
         border-radius: 30px;
         z-index: 1;
         direction: rtl;
-        padding: 25px 90px;
         color: $light-color;
         i{
             color: $footer-text-color;

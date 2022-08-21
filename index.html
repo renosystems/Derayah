@@ -71,12 +71,12 @@
                     aria-expanded="false">
                     عن دراية
                   </a>
-                  <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#"></a></li>
+                    <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul> -->
+                          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                  </ul>
                 </li>
                 <img class="navbar-brand" src="./Images/icon-search.png"/>
               </ul>
@@ -104,6 +104,111 @@
         </div>
         <!-- end side menu -->
       </div>
+      <!-- responsive design -->
+      <!-- top menu responsive -->
+      <div class="row topMenuRes">
+        <div class="col-2"><img src="./Images/notify-icon.png" alt=""></div>
+        <div class="col-5 mt-2"><span>920024433</span></div>
+        <div class="col-5 pe-5">
+          <p>ENGLISH</p>
+          <img src="./Images/ground-icon.png" alt="">
+        </div>
+      </div>
+      <!-- Endtop menu responsive -->
+
+      <!-- navBar responsive -->
+      <div class="row navBarRes">
+        <div class="col-6"><img src="./Images/logo.png" alt=""></div>
+        <div class="col-6 text-start">
+          <p>تسجيل الدخول</p>
+          <i class="fa-solid fa-bars" onclick="openNav()"></i>
+        </div>
+      </div>
+      <!-- End navBar responsive -->
+
+      <!-- scroll menu -->
+      <div id="mySidenav" class="sidenav">
+        <div class="ps-3 text-start">
+          <button type="button" class="btn-close"
+            onclick="closeNav()"></button>
+        </div>
+        <div class="input-group px-3">
+          <div class="form-outline w-100 sidenav-inputDix">
+            <i class="fa fa-search"></i>
+            <input type="search" 
+              class="" placeholder="ادخل كلمات البحث" />
+              <i class="fa fa-close"></i>
+          </div>
+        </div>
+        <div class="theaccordion">
+          <div class="accordionn-itemm2">
+            <div
+              class="accordionn-item-headerr2">
+              Solutions
+            </div>
+            <div class="accordionn-item-bodyy2">
+              <div
+                class="accordionn-item-body-contentt2">
+                <div class="my-3"> <span> Correspondence
+                    Management</span></div>
+                <div class="my-3"> <span> Information Management
+                    (EIM)</span></div>
+                <div class="my-3"> <span> Insurance Automation</span></div>
+                <div class="my-3"> <span> Telecom Solutions</span></div>
+                <div class="my-3"> <span> Smart Solutions</span></div>
+                <div class="my-3"> <span> Business Applications</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="accordionn-itemm2">
+            <div
+              class="accordionn-item-headerr2">
+              Services
+            </div>
+            <div class="accordionn-item-bodyy2">
+              <div
+                class="accordionn-item-body-contentt2">
+                Lorem ipsum.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordionn-itemm2">
+            <div
+              class="accordionn-item-headerr2">
+              Industries
+            </div>
+            <div class="accordionn-item-bodyy2">
+              <div
+                class="accordionn-item-body-contentt2">
+                Lorem ipsum.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordionn-itemm2">
+            <div
+              class="accordionn-item-headerr2">
+              Company
+            </div>
+            <div class="accordionn-item-bodyy2">
+              <div
+                class="accordionn-item-body-contentt2">
+                Lorem ipsum.
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="px-3" style="font-weight: 600;">
+              Contact
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
       <!-- hero slider -->
       <div id="carouselExampleSlidesOnly" class="carousel slide"
         data-bs-ride="carousel">
@@ -175,6 +280,9 @@
               </div>
               <p class="mx-3">شاهد الملخص</p>
               <img src="./Images/Rounded-arrow.png" alt="">
+              <div class="WhyInvestment-right-section-watch--playVRes">
+                <i class="fa-solid fa-play"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -191,7 +299,7 @@
         </div>
         <h6>الجوائز التي فزنا بها</h6>
         <p>قد تكون مهتما بما يمكننا تقديمه لك. المزيد من الخدمات يمكنك أن تجد
-          <br> أدناه . نحن نفعل كل شئ علي مستوي عال.</p>
+           أدناه . نحن نفعل كل شئ علي مستوي عال.</p>
         <div class="mt-4">
           <img src="./Images/awardImg1.png" alt="">
           <img src="./Images/awardImg2.png" alt="">
@@ -206,7 +314,7 @@
 
       <!-- Markets section -->
       <div class="market-section row">
-        <div class="col-6 market-section-left">
+        <div class="col-lg-6 col-xs-12 market-section-left">
           <p>الأسواق المتاحة</p>
           <div class="market-section-left-line"></div>
           <h6>أسواق منصات تداول دراية <b class="ORG">.</b></h6>
@@ -214,6 +322,7 @@
               توزيعات أرباح <br>
               دورية لمالكي الوحدات</p>
           </div>
+          <div class="market-section-left-flagDiv">
           <div class="row">
             <div class="col-3"><span class="ORG">25</span><span>الدول</span></div>
             <div class="col-3"><span class="ORG">25</span><span>العملات</span></div>
@@ -250,6 +359,7 @@
             <img src="./Images/flag14.png" alt="">
             <img src="./Images/flag15.png" alt="">
           </div>
+        </div>
           <div class="market-section-left-btn"> <div class="market-section-dot"></div>
             <p>دراية جلوبال</p>
             <i class="fa fa-arrow-left"></i>
@@ -260,7 +370,7 @@
             <i class="fa fa-arrow-left"></i>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-lg-6 col-xs-12 market-section-right">
           <div class="market-section-btn">
             <div class="market-section-row">
               <div class="market-section-dot"></div>
@@ -277,7 +387,33 @@
 
       <!-- investment funds section -->
       <div class="row investFund">
-        <div class="col-6 investFund-left">
+        <div class="col-lg-6 investFund-right">
+          <div class="investFund-right-side"></div>
+          <p>صناديق الاستثمار</p>
+          <div class="investFund-right-line"></div>
+          <h6>صناديق دراية<br> للاستثمار المالي<b class="ORG">.</b></h6>
+          <div class="ms-5 my-3"> <p>المشاركة في سوق الأوراق المالية عوائد علي
+              شكل أرباح بشكل دوري
+              للمالكين المشاركين في السوق</p>
+          </div>
+          <div class="investFund-right-list active"
+            onclick="openLeftSection('DivT2', this)">
+            <div class="investFund-right-list-icon"><i class="fa
+                fa-chart-column"></i></div>
+            <span id="DivT1">صناديق دراية للأسهم المالية </span>
+          </div>
+          <div class="investFund-right-list" onclick="openLeftSection('DivT3',
+            this)">
+            <div class="investFund-right-list-icon"><i class="fa fa-clock"></i></div>
+            <span id="DivT2">استثمار سوبر ماركت دراية المالية </span>
+          </div>
+          <div class="investFund-right-list" onclick="openLeftSection('DivT1',
+            this)">
+            <div class="investFund-right-list-icon"><i class="fa fa-home"></i></div>
+            <span id="DivT3">صناديق دراية المالية العقارية</span>
+          </div>
+        </div>
+        <div class="col-lg-6 investFund-left">
           <h6 id="TitleText">صناديق دراية <br> للأسهم المالية</h6>
           <p>المشاركة في البورصة مع تحقيق عوائد علي شكل توزيع <br> أرباح بشكل
             دوري علي مالكي الوحدات المشاركة</p>
@@ -286,36 +422,14 @@
           <div class="rot">
             <span class="ORG investFund-left-text">كيف يعمل</span></div>
           <img src="./Images/play.png" alt="" class="ORG investFund-left-play">
-          <div>
+          <div class="investFund-left-faded">
             <h5 id="fadedText">استثمار سوبر ماركت <br> دراية المالية</h5>
             <p>المشاركة في البورصة مع تحقيق عوائد علي شكل توزيع <br> أرباح بشكل
               دوري علي مالكي الوحدات المشاركة</p>
           </div>
           <div class="investFund-left-divlight"></div>
         </div>
-        <div class="col-6 investFund-right">
-          <div class="investFund-right-side"></div>
-          <p>صناديق الاستثمار</p>
-          <div class="investFund-right-line"></div>
-          <h6>صناديق دراية<br> للاستثمار المالي<b class="ORG">.</b></h6>
-          <div class="ms-5 my-3"> <p>المشاركة في سوق الأوراق المالية عوائد علي
-              شكل أرباح بشكل دوري<br>
-              للمالكين المشاركين في السوق</p>
-          </div>
-          <div class="investFund-right-list active" onclick="openLeftSection('DivT2', this)">
-            <div class="investFund-right-list-icon"><i class="fa
-                fa-chart-column"></i></div>
-            <span id="DivT1">صناديق دراية للأسهم المالية </span>
-          </div>
-          <div class="investFund-right-list" onclick="openLeftSection('DivT3', this)">
-            <div class="investFund-right-list-icon"><i class="fa fa-clock"></i></div>
-            <span id="DivT2">استثمار سوبر ماركت دراية المالية </span>
-          </div>
-          <div class="investFund-right-list" onclick="openLeftSection('DivT1', this)">
-            <div class="investFund-right-list-icon"><i class="fa fa-home"></i></div>
-            <span id="DivT3">صناديق دراية المالية العقارية</span>
-          </div>
-        </div>
+        
       </div>
       <!-- End investment funds section -->
 
@@ -343,12 +457,12 @@
         <div class="derayahServices-line"></div>
         <p>خدمات الهوامش</p>
         <div class="derayahServices-line"></div>
-        <h1>خدمات التمويل في <br> دراية المالية <b class="ORG">.</b></h1>
-        <h6>المشاركة في البورصة مع تحقيق عوائد علي شكل توزيع <br> للأرباح بشكل
+        <h1>خدمات التمويل في  دراية المالية <b class="ORG">.</b></h1>
+        <h6>المشاركة في البورصة مع تحقيق عوائد علي شكل توزيع  للأرباح بشكل
           دوري.</h6>
         <div class="derayahServices-FDiv derayahServices-FDiv-bg1 row">
-          <div class="col-6 derayahServices-FDiv-right">
-            <h1>التمويل المجاني</h1>
+          <div class="col-lg-6 col-xs-12 derayahServices-FDiv-right">
+            <h2>التمويل المجاني</h2>
             <h5>اذا كنت متداولا نشطا في سوق الأسهم, <br>وكانت استراتيجيتك
               الاستثمارية قصيرة المدي <br>
               وكنت تمتلك الخبرة الجيدة في ادارة استثماراتك <br>فأن التمويل
@@ -356,7 +470,7 @@
               التمويليه, المتاحة للسوق السعودي.</h5>
             <p>اكتشف المزيد </p>
           </div>
-          <div class="col-6 derayahServices-FDiv-left">
+          <div class="col-lg-6 col-xs-12 derayahServices-FDiv-left">
             <div class="derayahServices-FDiv-left-chart"><img
                 src="./Images/chartImg.png" alt=""></div>
             <div class="derayahServices-FDiv-left-chartWave"><img
@@ -368,29 +482,33 @@
                 fa-dollar-sign"></i></div></center>
         </div>
         <div class="derayahServices-FDiv derayahServices-FDiv-bg2 row">
-          <div class="col-6 derayahServices-FDiv-right">
+          <div class="col-lg-6 col-xs-12 derayahServices-FDiv-right">
             <div class="derayahServices-FDiv-right-chart"><img
                 src="./Images/chart2.png" alt=""></div>
             <div class="derayahServices-FDiv-right-Div2"><img
                 src="./Images/circleChart.png" alt=""></div>
-            <div class="derayahServices-FDiv-right-progress1"> 
+            <div class="derayahServices-FDiv-right-progress1">
               <p>70%</p>
               <div class="progress">
-              <div class="progress-bar derayahServices-FDiv-right-progress1-progressBar"
-               role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar
+                  derayahServices-FDiv-right-progress1-progressBar"
+                  role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100"></div>
               </div>
-              
+
             </div>
             <div class="derayahServices-FDiv-right-progress2">
               <p>95%</p>
               <div class="progress">
-                <div class="progress-bar derayahServices-FDiv-right-progress2-progressBar"
-                 role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
+                <div class="progress-bar
+                  derayahServices-FDiv-right-progress2-progressBar"
+                  role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
             </div>
           </div>
-          <div class="col-6 derayahServices-FDiv-left">
-            <h1>التمويل بالمرابحه</h1>
+          <div class="col-lg-6 col-xs-12 derayahServices-FDiv-left">
+            <h2>التمويل بالمرابحه</h2>
             <h5>هو التمويل الأنسب للعملاء المهتمين بالاستثمار <br> علي المدي
               الطويل. أو التداول بشكل غير منتظم. <br>
               يمكنك طلب هذا النوع من التمويل أونلاين بحد <br>أدني 10 ألاف ريال
@@ -401,13 +519,13 @@
                 fa-chart-line"></i></div></center>
         </div>
         <div class="derayahServices-FDiv derayahServices-FDiv-bg3 row">
-          <div class="col-6 derayahServices-FDiv-right">
-            <h1>التداول بالهامش </h1>
+          <div class="col-lg-6 col-xs-12 derayahServices-FDiv-right">
+            <h2>التداول بالهامش </h2>
             <h5>اذا كنت متداولا نشطا في سوق الأسهم, فأن <br>
               استراتيجيتك الاستثمارية قصيرة الأجل ولديك جيدة.</h5>
             <p>اكتشف المزيد </p>
           </div>
-          <div class="col-6 derayahServices-FDiv-left">
+          <div class="col-lg-6 col-xs-12 derayahServices-FDiv-left">
             <div class="derayahServices-FDiv-left-chart3"><img
                 src="./Images/div3.png" alt=""></div>
             <div class="derayahServices-FDiv-left-chartLine"><img
@@ -424,14 +542,16 @@
       <!-- newest in derayah section -->
       <div class="newestInDerarah row">
         <div class="newestInDerarah-sideDiv"></div>
-        <div class="col-6">
+        <div class="col-lg-6 col-xs-12">
           <p>أخر الاخبار</p>
           <div class="newestInDerarah-line"></div>
           <h1>الأحدث في دراية<b class="ORG">.</b></h1>
-          <h6>ابقي علي اطلاع دائم علي اخر اخبار والتغييرات في اسواق <br> العالم وكل جديد</h6>
+          <h6>ابقي علي اطلاع دائم علي اخر اخبار والتغييرات في اسواق <br> العالم
+            وكل جديد</h6>
           <div class="row my-4 newestInDerarah-card">
             <div class="col-3">
-              <img class="newestInDerarah-CardImg" src="./Images/cardImg.png" alt="">
+              <img class="newestInDerarah-CardImg" src="./Images/cardImg.png"
+                alt="">
             </div>
             <div class="col-9 pe-5 pt-2">
               <p>06 ابريل 2022</p>
@@ -443,7 +563,8 @@
           </div>
           <div class="row my-4 newestInDerarah-card">
             <div class="col-3">
-              <img class="newestInDerarah-CardImg" src="./Images/cardImg.png" alt="">
+              <img class="newestInDerarah-CardImg" src="./Images/cardImg.png"
+                alt="">
             </div>
             <div class="col-9 pe-5 pt-2">
               <p>06 ابريل 2022</p>
@@ -454,7 +575,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-lg-6 col-xs-12">
           <div class="newestInDerarah-leftImg">
             <div class="newestInDerarah-leftImg-footer">
               <p>06 ابريل 2022</p>
@@ -469,13 +590,13 @@
       <div class="footerSec">
         <div class="footerSec-side"></div>
         <div class="footerSec-callUs row">
-          <div class="col-1"><i class="fa fa-phone-volume"></i></div>
-          <div class="col-3"> <p>اتصل بنا الان</p></div>
-          <div class="col-4">
+          <div class="col-lg-1"><i class="fa fa-phone-volume"></i></div>
+          <div class="col-lg-3"> <p>اتصل بنا الان</p></div>
+          <div class="col-lg-4">
             <h6>الاتصال عن طريق الهاتف</h6>
             <h1>920024433</h1>
           </div>
-          <div class="col-4">
+          <div class="col-lg-4">
             <h6>تواصل من خلال الموقع</h6>
             <div class="footerSec-callUs-btn">
               <h5>اذهب الي الاتصال </h5>
@@ -486,68 +607,79 @@
         <div class="footerSec-body">
           <div class="d-flex flex-column h-100">
             <footer class="py-4">
-                <div class="container pt-4">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6">
-                            <img src="./Images/footerLogo.png" alt="">
-                            <div class="my-2"><span>2020 @ دراية المالية جميع الحقوق محفوظة. باستخدام هذا <br>
-                               الموقع. فأنك توافق علي <u>شروط الخدمات والخصوصية</u></span></div>
-                            <p class="footerSec-body-header">قم بتنزيل تطبيقنا</p>
-                            <div>
-                              <div class="footerSec-body-downloadImg"></div>
-                              <div class="footerSec-body-downloadIm2"></div>
-                              <!-- <img src="./Images/download1.png" alt=""> -->
-                              <!-- <img class="footerSec-body-downloadImg" src="./Images/download2.png" alt=""> -->
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-6">
-                          <p class="footerSec-body-header">الحلول</p>
-                            <ul class="list-unstyled">
-                                <li><p>دراية سمارت</p></li>
-                                <li><p>منصة دراية</p></li>
-                                <li><p>منصة دراية جلوبال</p></li>
-                                <li><p>سوبر ماركت الصناديق</p></li>
-                                <li><p>الأسعار والرسوم</p></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-2 col-md-6">
-                          <p class="footerSec-body-header">الشركة</p>
-                          <ul class="list-unstyled">
-                              <li><p>من نحن </p></li>
-                              <li><p>دعم العملاء</p></li>
-                              <li><p>الوظايف</p></li>
-                              <li><p>ارشادات أمنية</p></li>
-                              <li><p>الأسئلة الشائعة</p></li>
-                              <li><p>خريطة الموقع</p></li>
-                          </ul>
-                        </div>
-                        <div class="col-lg-5 col-md-6">
-                          <p class="footerSec-body-header">اشترك في نشرة دراية الاخبارية</p>
-                          <div class="mt-2 mb-3">
-                            <p>سيتم ارسال أخر الأخبار حول الأسواق العالمية وأحدث المقالات <br> الي صندوق الوارد
-                            الخاص بك علي أساس أسبوعي.</p></div>
-                            <form action="#">
-                                <div class="mb-3">
-                                  <div class="footerSec-body-input-group ">
-                                  <button class="footerSec-body-Sub-btn" type="button">الاشتراك</button>
-                                  <input class="footerSec-body-footer-input" type="text" placeholder="أدخل عنوان بريدك الالكتروني">
-                                </div>
-                                  <div class="row me-2 mt-2">
-                                    <div class="footerSec-body-footer-icon"><i class="fa-brands fa-linkedin-in"></i></div>
-                                    <div class="footerSec-body-footer-icon"><i class="fa-brands fa-youtube"></i></div>
-                                    <div class="footerSec-body-footer-icon"><i class="fa-brands fa-twitter"></i></div>
-                                    <div class="footerSec-body-footer-icon"><i class="fa-brands fa-facebook-f"></i></div>
-                                  </div>
-                                </div>
-                            </form>
-                        </div>
+              <div class="container pt-4">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6">
+                    <img src="./Images/footerLogo.png" alt="">
+                    <div class="my-2"><span>2020 @ دراية المالية جميع الحقوق
+                        محفوظة. باستخدام هذا <br>
+                        الموقع. فأنك توافق علي <u>شروط الخدمات والخصوصية</u></span></div>
+                    <p class="footerSec-body-header">قم بتنزيل تطبيقنا</p>
+                    <div>
+                      <div class="footerSec-body-downloadImg"></div>
+                      <div class="footerSec-body-downloadIm2"></div>
+                      <!-- <img src="./Images/download1.png" alt=""> -->
+                      <!-- <img class="footerSec-body-downloadImg" src="./Images/download2.png" alt=""> -->
                     </div>
+                  </div>
+                  <div class="col-lg-2 col-md-6">
+                    <p class="footerSec-body-header">الحلول</p>
+                    <ul class="list-unstyled">
+                      <li><p>دراية سمارت</p></li>
+                      <li><p>منصة دراية</p></li>
+                      <li><p>منصة دراية جلوبال</p></li>
+                      <li><p>سوبر ماركت الصناديق</p></li>
+                      <li><p>الأسعار والرسوم</p></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2 col-md-6">
+                    <p class="footerSec-body-header">الشركة</p>
+                    <ul class="list-unstyled">
+                      <li><p>من نحن </p></li>
+                      <li><p>دعم العملاء</p></li>
+                      <li><p>الوظايف</p></li>
+                      <li><p>ارشادات أمنية</p></li>
+                      <li><p>الأسئلة الشائعة</p></li>
+                      <li><p>خريطة الموقع</p></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-5 col-md-6">
+                    <p class="footerSec-body-header">اشترك في نشرة دراية
+                      الاخبارية</p>
+                    <div class="mt-2 mb-3">
+                      <p>سيتم ارسال أخر الأخبار حول الأسواق العالمية وأحدث
+                        المقالات <br> الي صندوق الوارد
+                        الخاص بك علي أساس أسبوعي.</p></div>
+                    <form action="#">
+                      <div class="mb-3">
+                        <div class="footerSec-body-input-group ">
+                          <button class="footerSec-body-Sub-btn" type="button">الاشتراك</button>
+                          <input class="footerSec-body-footer-input" type="text"
+                            placeholder="أدخل عنوان بريدك الالكتروني">
+                        </div>
+                        <div class="row me-2 mt-2">
+                          <div class="footerSec-body-footer-icon"><i
+                              class="fa-brands fa-linkedin-in"></i></div>
+                          <div class="footerSec-body-footer-icon"><i
+                              class="fa-brands fa-youtube"></i></div>
+                          <div class="footerSec-body-footer-icon"><i
+                              class="fa-brands fa-twitter"></i></div>
+                          <div class="footerSec-body-footer-icon"><i
+                              class="fa-brands fa-facebook-f"></i></div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
                 </div>
-                <div class="row text-center mt-5 me-5 pt-2 footerSec-body-copyright">
-                  <p class="footerSec-body-header">دراية المالية .ص-ب:286546 الرياض 11323 المملكة العربية السعودية بترخيص من هيئة السوق المالية 08109-27</p>
-                </div>
+              </div>
+              <div class="row text-center mt-5 me-5 pt-2
+                footerSec-body-copyright">
+                <p class="footerSec-body-header">دراية المالية .ص-ب:286546
+                  الرياض 11323 المملكة العربية السعودية بترخيص من هيئة السوق
+                  المالية 08109-27</p>
+              </div>
             </footer>
-        </div>
+          </div>
         </div>
       </div>
       <!-- End footer  -->
@@ -555,6 +687,6 @@
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
-        <script src="./script.js"></script>
+      <script src="./script.js"></script>
     </body>
   </html>

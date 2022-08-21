@@ -1,21 +1,139 @@
 .derayahServices {
+  @include devices(tablet) {
+    background: url(../Images/Frame.svg);
+    background-size: 30%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    &-sideDiv {
+      width: 7%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $accent-purple;
+    }
+    p {
+      font-size: 16px;
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: bold;
+      padding: 0 33%;
+    }
+    h2{
+      
+        font-size: 34px;
+        width: 280px;
+        font-weight: bold;
+    }
+    h6 {
+      font-size: 18px;
+      padding: 0 35%;
+    }
+    &-FDiv {
+      width: 470px;
+      height: 230px;
+      &-left {
+        text-align: right;
+        position: absolute;
+        top: 10%;
+        left: -25%;
+        h5 {
+          font-size: 12px;
+          width: 250px;
+        }
+        &-chart {
+          top: 0;
+          left: 0;
+        }
+        &-chartWave {
+          top: 130px;
+          left: 20%;
+        }
+      &-exportDiv {
+        top: 40px;
+        left: 80%;
+      }
+      &-dollarSign {
+        margin-top: 20%;
+      }
+      }
+      &-right {
+        text-align: right;
+        position: absolute;
+        top: 15%;
+        right: -15%;
+      }
+    }
+  }
+   @include devices(mobile) {
+    padding: 0 3%;
+    padding-top: 3%;
+    &-sideDiv {
+      display: none;
+    }
+    p {
+      font-size: 12px;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 40px;
+      font-weight: 400;
+      padding: 0 8%;
+    }
+    h2{
+      font-size: 40px;
+      font-weight: 400;
+    }
+    h6 {
+      font-size: 16px;
+      padding: 0 4%;
+    }
+    h5 {
+      font-size: 14px;
+      margin: auto;
+    }
+    &-FDiv {
+      width: 95%;
+      &-left {
+        text-align: center;
+        // position: absolute;
+        &-chart {
+          top: 13%;
+          left: 2%;
+        }
+        &-chartWave {
+          top: 180px;
+          left: 25%;
+        }
+        &-exportDiv {
+          top: 90px;
+          left: 55%;
+        }
+        &-dollarSign {
+          position: absolute;
+          top: -25px;
+          left: 45%;
+        }
+      }
+      &-right {
+        text-align: center;
+        margin-top: 70%;
+        margin-bottom: 10%;
+        // position: absolute;
+      }
+    }
+  }
   width: 100%;
   height: 185%;
-  background-color: $servicesSection-bgColor;
+  // background-color: $servicesSection-bgColor;
   text-align: center;
   direction: rtl;
   position: relative;
   padding-top: 5%;
   padding-bottom: 3%;
 
-  &-sideDiv {
-    width: 7%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: $accent-purple;
-  }
+  
   &-line {
     height: 1px;
     width: 50px;
@@ -25,22 +143,15 @@
   }
   p {
     color: $side-menu-text;
-    font-size: 16px;
     display: inline-block;
   }
-  h1 {
-    font-size: 48px;
-    font-weight: bold;
-  }
+  
   h6 {
-    font-size: 18px;
     color: $GrayScale;
     margin-top: 5px;
     margin-bottom: 40px;
   }
   &-FDiv {
-    width: 470px;
-    height: 230px;
     border-radius: 30px;
     margin: auto;
     margin-bottom: 40px;
@@ -56,10 +167,6 @@
       background-color: $servicesSection-bgColor3;
     }
     &-left {
-      text-align: right;
-      position: absolute;
-      top: 10%;
-      left: -25%;
 
       h1 {
         font-weight: bold;
@@ -68,9 +175,7 @@
         width: 250px;
       }
       h5 {
-        font-size: 12px;
         color: $dark-blue;
-        width: 250px;
       }
       p {
         font-size: 15px;
@@ -83,8 +188,6 @@
         background-color: $light-color;
         border-radius: 25px;
         position: absolute;
-        top: 0;
-        left: 0;
         img {
           width: 80%;
           margin-right: 10%;
@@ -112,8 +215,6 @@
         background-color: $light-color;
         border-radius: 12%;
         position: absolute;
-        top: 130px;
-        left: 20%;
         img {
           width: 170px;
           height: 40px;
@@ -156,8 +257,6 @@
         border-radius: 25px;
         background-color: $light-color;
         position: absolute;
-        top: 40px;
-        left: 80%;
         img {
           width: 80%;
           margin-top: 10%;
@@ -169,7 +268,6 @@
         height: 50px;
         border-radius: 15px;
         background-color: $light-color;
-        margin-top: 20%;
         i {
           color: $primary-color;
           margin-top: 15px;
@@ -178,10 +276,6 @@
     }
 
     &-right {
-      text-align: right;
-      position: absolute;
-      top: 15%;
-      right: -15%;
 
       h1 {
         font-weight: bold;

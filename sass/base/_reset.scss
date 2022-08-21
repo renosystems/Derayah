@@ -1,3 +1,17 @@
+@mixin devices ($breakpoint) { //the name of the mixin is devices
+  
+    @if $breakpoint == tablet {    
+    @media only screen and (min-width: 482px) {
+      @content;
+    }
+  }
+ 
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 481px) {
+      @content;
+    }
+  }
+}
 @font-face {
     font-family: "TheMixArabic";
     src: url(../../font/TheMixArabic/TheMixArabic-Light.eot);
@@ -37,4 +51,7 @@ html,body{
 .rot{
     transform: rotate(270deg);
     display: inline-block;
+}
+.col-xs{
+  width: 100%;
 }

@@ -4,8 +4,6 @@
     text-align: center;
     background-color: $light-color;
     direction: rtl;
-    padding-top: 3%;
-    padding-bottom: 10%;
 
     &-line{
         display: inline-block;
@@ -21,17 +19,46 @@
     }
     h6{
         margin: 1% 0;
-        font-size: 50px;
-        font-weight: bold;
     }
     p{
-        font-size: 18px;
         color: $GrayScale;
         margin: 2% 0;
     }
     img{
-        height: 50px;
-        width: 60px;
         margin: 0 10px;
+    }
+    @include devices(tablet) {
+        padding-top: 3%;
+        padding-bottom: 10%;
+        h6{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 18px;
+            margin: 0 30%;
+        }
+        img{
+            height: 50px;
+            width: 60px;
+        }
+    }
+     @include devices(mobile) {
+        padding-top: 7%;
+        padding-bottom: 20%;
+        h6{
+            font-size: 44px;
+            font-weight: 400;
+            margin: 0 20%;
+        }
+        p{
+            font-size: 16px;
+            margin: 40px 30px;
+        }
+        img{
+            height: 40px;
+            width: 50px;
+            margin-top: 20px;
+        }
     }
 }

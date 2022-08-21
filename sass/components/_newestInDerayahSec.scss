@@ -1,23 +1,55 @@
 .newestInDerarah{
+    @include devices(tablet) {
+        padding-right: 15%;
+        &-sideDiv {
+            width: 7%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: $accent-purple;
+          }
+          &-leftImg{
+            width: 350px;
+            height: 400px;
+            position: absolute;
+            bottom: 15%;
+          }
+          h6{
+            margin-bottom: 25px;
+          }
+    }
+     @include devices(mobile) {
+        padding-right: 2%;
+        &-sideDiv {
+            display: none;
+          }
+          &-leftImg{
+            position: absolute;
+            width: 97%;
+            height: 300px;
+            top: 25%;
+            left: 2%;
+          }
+          h6{
+            margin-bottom: 340px;
+          }
+    }
     width: 100%;
     height: 120%;
+    background: url(../Images/Frame\ \(1\).svg);
+    background-size: 50%;
+    background-position: right;
+    background-repeat: no-repeat;
     background-color: $newestBg;
     position: relative;
     padding-top: 7%;
-    padding-right: 15%;
     direction: rtl;
     text-align: right;
     margin: 0;
     padding-bottom: 5%;
 
-    &-sideDiv {
-        width: 7%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: $accent-purple;
-      }
+    
 
     p{
         font-size: 16px;
@@ -32,7 +64,6 @@
         font-size: 20px;
         color: $GrayScale;
         margin-top: 15px;
-        margin-bottom: 25px;
     }
     &-line{
         width: 40px;
@@ -65,14 +96,11 @@
         }
     }
     &-leftImg{
-        width: 350px;
-        height: 400px;
         background: url(../Images/leftImg.png);
         background-size: 100%;
         background-repeat: no-repeat;
         border-radius: 20px;
-        position: absolute;
-        bottom: 15%;
+        
         &-footer{
             position: absolute;
             bottom: 10px;
