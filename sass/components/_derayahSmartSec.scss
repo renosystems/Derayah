@@ -1,6 +1,10 @@
 .derayahSmart{
     @include devices(tablet) {
         height: 100%;
+        background: url(../Images/derayahSmartSecbg.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: bottom;
         &-rightDivCover{
             width: 50%;
             height: 100%;
@@ -49,13 +53,17 @@
     }
      @include devices(mobile) {
         height: 520px;
+        background: url(../Images/smartBgResponsive.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+         background-position: bottom;
         &-rightDivCover{
             width: 100%;
             height: 50%;
             position: absolute;
             right: 0;
             bottom: 0;
-            background-image: linear-gradient(to right,$light-color, #502269);
+            // background-image: linear-gradient(to right,$light-color, #502269);
             opacity: .03;
         }
         &-rightDiv{
@@ -97,10 +105,9 @@
         }
     }
     width: 100%;
-    background: url(../Images/derayahSmartSecbg.png);
-    background-size: 100%;
-    background-position: bottom;
-    background-repeat: no-repeat;
+    // background-size: 100%;
+    // background-position: bottom;
+    // background-repeat: no-repeat;
     direction: rtl;
     position: relative;
     padding-bottom: 15%;

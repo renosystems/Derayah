@@ -773,10 +773,6 @@ html, body {
 
 .derayahSmart {
   width: 100%;
-  background: url(../Images/derayahSmartSecbg.png);
-  background-size: 100%;
-  background-position: bottom;
-  background-repeat: no-repeat;
   direction: rtl;
   position: relative;
   padding-bottom: 15%;
@@ -785,6 +781,10 @@ html, body {
 @media only screen and (min-width: 482px) {
   .derayahSmart {
     height: 100%;
+    background: url(../Images/derayahSmartSecbg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
   }
   .derayahSmart-rightDivCover {
     width: 50%;
@@ -834,6 +834,10 @@ html, body {
 @media only screen and (max-width: 481px) {
   .derayahSmart {
     height: 520px;
+    background: url(../Images/smartBgResponsive.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
   }
   .derayahSmart-rightDivCover {
     width: 100%;
@@ -841,7 +845,6 @@ html, body {
     position: absolute;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(to right, rgb(255, 255, 255), #502269);
     opacity: 0.03;
   }
   .derayahSmart-rightDiv {
@@ -1271,7 +1274,7 @@ html, body {
 .newestInDerarah {
   width: 100%;
   height: 120%;
-  background: url(../Images/Frame\ \(1\).svg);
+  background: url(../Images/Frame1.svg);
   background-size: 50%;
   background-position: right;
   background-repeat: no-repeat;
@@ -1303,11 +1306,30 @@ html, body {
   }
   .newestInDerarah h6 {
     margin-bottom: 25px;
+    font-size: 20px;
+  }
+  .newestInDerarah h1 {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  .newestInDerarah-CardImg {
+    width: 150px;
+    height: 150px;
+  }
+  .newestInDerarah-card p {
+    font-size: 14px;
+  }
+  .newestInDerarah-card h5 {
+    font-size: 22px;
+  }
+  .newestInDerarah-card-text {
+    padding-right: 20px;
   }
 }
 @media only screen and (max-width: 481px) {
   .newestInDerarah {
     padding-right: 2%;
+    padding-bottom: 30%;
   }
   .newestInDerarah-sideDiv {
     display: none;
@@ -1316,11 +1338,29 @@ html, body {
     position: absolute;
     width: 97%;
     height: 300px;
-    top: 25%;
+    top: 21%;
     left: 2%;
   }
   .newestInDerarah h6 {
-    margin-bottom: 340px;
+    margin-bottom: 350px;
+    font-size: 16px;
+  }
+  .newestInDerarah h1 {
+    font-size: 40px;
+    font-weight: 500;
+  }
+  .newestInDerarah-CardImg {
+    width: 130px;
+    height: 130px;
+  }
+  .newestInDerarah-card p {
+    font-size: 12px;
+  }
+  .newestInDerarah-card h5 {
+    font-size: 16px;
+  }
+  .newestInDerarah-card-text {
+    padding-right: 50px;
   }
 }
 .newestInDerarah p {
@@ -1328,12 +1368,7 @@ html, body {
   color: #6c6b80;
   display: inline-block;
 }
-.newestInDerarah h1 {
-  font-size: 48px;
-  font-weight: bold;
-}
 .newestInDerarah h6 {
-  font-size: 20px;
   color: #6c6b80;
   margin-top: 15px;
 }
@@ -1346,19 +1381,13 @@ html, body {
   margin-bottom: 3px;
 }
 .newestInDerarah-CardImg {
-  width: 150px;
-  height: 150px;
   border-radius: 20px;
 }
 .newestInDerarah-card p {
-  font-size: 14px;
   color: #A9AFC3;
 }
-.newestInDerarah-card h5 {
-  font-size: 22px;
-}
 .newestInDerarah-readMoreDiv {
-  width: 80px;
+  width: 70px;
   border-bottom: 1px solid #510B76;
 }
 .newestInDerarah-readMoreDiv span {
@@ -1406,11 +1435,33 @@ html, body {
     top: -50px;
     padding: 25px 90px;
   }
+  .footerSec-body {
+    width: 93%;
+    padding-right: 10%;
+    padding-left: 25%;
+  }
+  .footerSec-body-text2 {
+    display: none;
+  }
+  .footerSec-body-downloadImg {
+    height: 30px;
+    width: 100px;
+    display: inline-block;
+  }
+  .footerSec-body-downloadIm2 {
+    height: 30px;
+    width: 100px;
+    display: inline-block;
+  }
+  .footerSec-body-footer-icon {
+    padding-left: 4%;
+  }
 }
 @media only screen and (max-width: 481px) {
   .footerSec {
     width: 100vw;
     height: 1000px;
+    padding-top: 120px;
   }
   .footerSec-side {
     display: none;
@@ -1424,6 +1475,28 @@ html, body {
   }
   .footerSec-callUs-btn {
     margin: auto;
+  }
+  .footerSec-body {
+    width: 100%;
+  }
+  .footerSec-body-copyright {
+    margin: 0 10%;
+  }
+  .footerSec-body-text {
+    display: none;
+  }
+  .footerSec-body-downloadImg {
+    height: 40px;
+    width: 130px;
+  }
+  .footerSec-body-downloadIm2 {
+    height: 40px;
+    width: 130px;
+    margin-bottom: 20px;
+  }
+  .footerSec-body-footer-icon {
+    padding-left: 2%;
+    margin-left: 30px;
   }
 }
 .footerSec-callUs {
@@ -1472,15 +1545,12 @@ html, body {
 }
 .footerSec-body {
   position: absolute;
-  width: 93%;
   height: 100%;
   background-color: #2f164b;
   display: inline-block;
   margin: 0;
   direction: rtl;
   padding-top: 2%;
-  padding-right: 10%;
-  padding-left: 25%;
   color: rgb(255, 255, 255);
   padding-bottom: 26%;
 }
@@ -1507,24 +1577,18 @@ html, body {
   border-top: 1px solid #b99dc8;
 }
 .footerSec-body-downloadImg {
-  height: 30px;
-  width: 100px;
   margin-top: 10px;
-  background: url(../../Images/download1.png);
+  background: url(../Images/download1.png);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 5px;
-  display: inline-block;
 }
 .footerSec-body-downloadIm2 {
-  height: 30px;
-  width: 100px;
   margin-top: 10px;
-  background: url(../../Images/download2.png);
+  background: url(../Images/download2.png);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 5px;
-  display: inline-block;
 }
 .footerSec-body-input-group {
   direction: ltr;
@@ -1560,7 +1624,6 @@ html, body {
   display: inline-block;
   text-align: center;
   margin-left: 17px;
-  padding-left: 5%;
 }
 .footerSec-body-footer-icon i {
   font-size: 16px;
