@@ -18,11 +18,16 @@
             padding: 25px 90px;
         }
         &-body{
+            direction: rtl;
             width: 93%;
             padding-right:10%;
         padding-left:25%;
+        padding-top: 2%;
         &-text2{
             display: none;
+        }
+        ul,li{
+            width: 140px;
         }
         &-downloadImg{
             height: 30px;
@@ -37,12 +42,15 @@
         &-footer-icon{
             padding-left: 4%;
         }
+        &-iconDiv{
+            margin-right: 20px;
+        }
         }
     }
      @include devices(mobile) {
         width: 100vw;
-        height: 1000px;
-        padding-top: 120px;
+        height: 1100px;
+        // padding-top: 200px;
         &-side{
             display: none;
         }
@@ -51,7 +59,7 @@
             width: 95%;
             margin-left: 2%;
             text-align: center;
-            top: -100px;
+            top: -120px;
             padding: 20px 0;
             &-btn{
                 margin: auto;
@@ -59,7 +67,14 @@
         }
         &-body{
             width: 100%;
+            padding-top: 120px;
             // text-align: center;
+            &-Res{
+                padding: 0;
+                margin: 0;
+                width: 99%;
+                text-align: center;
+            }
             &-copyright{
                 margin: 0 10%;
             }
@@ -69,15 +84,22 @@
             &-downloadImg{
                 height: 40px;
                 width: 130px;
+                margin: auto;
             }
             &-downloadIm2{
                 height: 40px;
                 width: 130px;
-                margin-bottom: 20px;
+                margin-bottom: 50px;
+                margin: auto;
             }
             &-footer-icon{
                 padding-left: 2%;
-                margin-left: 30px;
+                margin-right: 25px;
+            }
+            &-iconDiv{
+                width: 100%;
+                text-align: center;
+                padding-left: 20%;
             }
             // &-Ttext{
             //     text-align: center;
@@ -139,8 +161,7 @@
         background-color: $footerBg;
         display: inline-block;
         margin: 0;
-        direction: rtl;
-        padding-top: 2%;
+        // direction: rtl;
         color: $light-color;
         padding-bottom: 26%;
         img{
@@ -155,9 +176,7 @@
             margin: 0;
             width: 100%;
         }
-        ul,li{
-            width: 140px;
-        }
+        
         &-header{
             font-size: 15px;
             color: $footer-text;

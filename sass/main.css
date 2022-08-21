@@ -1516,12 +1516,17 @@ html, body {
     padding: 25px 90px;
   }
   .footerSec-body {
+    direction: rtl;
     width: 93%;
     padding-right: 10%;
     padding-left: 25%;
+    padding-top: 2%;
   }
   .footerSec-body-text2 {
     display: none;
+  }
+  .footerSec-body ul, .footerSec-body li {
+    width: 140px;
   }
   .footerSec-body-downloadImg {
     height: 30px;
@@ -1536,12 +1541,14 @@ html, body {
   .footerSec-body-footer-icon {
     padding-left: 4%;
   }
+  .footerSec-body-iconDiv {
+    margin-right: 20px;
+  }
 }
 @media only screen and (max-width: 481px) {
   .footerSec {
     width: 100vw;
-    height: 1000px;
-    padding-top: 120px;
+    height: 1100px;
   }
   .footerSec-side {
     display: none;
@@ -1550,7 +1557,7 @@ html, body {
     width: 95%;
     margin-left: 2%;
     text-align: center;
-    top: -100px;
+    top: -120px;
     padding: 20px 0;
   }
   .footerSec-callUs-btn {
@@ -1558,6 +1565,13 @@ html, body {
   }
   .footerSec-body {
     width: 100%;
+    padding-top: 120px;
+  }
+  .footerSec-body-Res {
+    padding: 0;
+    margin: 0;
+    width: 99%;
+    text-align: center;
   }
   .footerSec-body-copyright {
     margin: 0 10%;
@@ -1568,15 +1582,22 @@ html, body {
   .footerSec-body-downloadImg {
     height: 40px;
     width: 130px;
+    margin: auto;
   }
   .footerSec-body-downloadIm2 {
     height: 40px;
     width: 130px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    margin: auto;
   }
   .footerSec-body-footer-icon {
     padding-left: 2%;
-    margin-left: 30px;
+    margin-right: 25px;
+  }
+  .footerSec-body-iconDiv {
+    width: 100%;
+    text-align: center;
+    padding-left: 20%;
   }
 }
 .footerSec-callUs {
@@ -1629,8 +1650,6 @@ html, body {
   background-color: #2f164b;
   display: inline-block;
   margin: 0;
-  direction: rtl;
-  padding-top: 2%;
   color: rgb(255, 255, 255);
   padding-bottom: 26%;
 }
@@ -1645,9 +1664,6 @@ html, body {
   font-size: 15px;
   margin: 0;
   width: 100%;
-}
-.footerSec-body ul, .footerSec-body li {
-  width: 140px;
 }
 .footerSec-body-header {
   font-size: 15px;
