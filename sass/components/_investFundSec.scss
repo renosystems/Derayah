@@ -1,0 +1,126 @@
+.investFund{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    
+    &-left{
+        position: relative;
+        text-align: right;
+        direction: rtl;
+        padding-top: 5%;
+        padding-right: 2%;
+
+        h6{
+            font-size: 34px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 500;
+            // margin: 30px 0;
+        }
+        h5{
+            font-size: 32px;
+            font-weight: 500;
+            margin-top: 5%;
+            margin-right: 10px;
+        }
+        &-divlight{
+            position: absolute;
+            bottom: 10px;
+            background: $light-color;
+            opacity: .97;
+            z-index: 1;
+            width: 250px;
+            height: 150px;
+        }
+        &-print{
+            width: 320px;
+            height: 200px;
+            margin-top: 20px;
+        }
+        &-text{
+            margin-top: 45%;
+            margin-right: 2px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        &-play{
+            width: 50px;
+            height: 50px;
+            display: inline;
+            position: absolute;
+            top: 60%;
+            right: 52%;
+        }
+    }
+
+    &-right{
+        position: relative;
+        background-color: $primary-color;
+        text-align: right;
+        direction: rtl;
+        color: $light-color;
+        padding-right: 15%;
+        padding-top: 3%;
+        &-side{
+            height: 100vh;
+            width: 80px;
+            background-color: $accent-purple;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        p{
+            font-size: 14px;
+            display: inline-block;
+        }
+        &-line{
+            display: inline-block;
+            height: 1px;
+            width: 50px;
+            background-color: $light-color;
+            margin-right: 10px;
+            margin-bottom: 5px;
+        }
+        h6{
+            font-size: 44px;
+            font-weight: bold;
+        }
+        &-list{
+            width: 480px;
+            height: 60px;
+            border-radius: 7px;
+            padding-top: 2%;
+            padding-right: 3%;
+            color: $light-color;
+            margin-top: 10px;
+
+            &-icon{
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                background-color: $list-icon-color;
+                display: inline-block;
+            }
+
+            span{
+                font-size: 24px;
+                font-weight: bold;
+                padding-bottom: 10px;
+                margin-left: 5px;
+            }
+            i{
+                color: $dark-color;
+                margin-top: 10px;
+                margin-right: 10px;
+            }
+        }
+        &-list.active{
+            background-color: $light-color;
+            color: $list-icon-color;
+        }
+    }
+}
