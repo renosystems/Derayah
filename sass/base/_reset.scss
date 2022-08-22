@@ -90,7 +90,7 @@ html,body{
   position: relative;
   // cursor: pointer;
 }
-.accordionn-item-headerr2::before {
+.accordionn-item-headerr2::after {
   content: "\002B";
   font-size: 1.5rem;
   position: absolute;
@@ -103,7 +103,7 @@ html,body{
   color: #fff;
 }
 
-.accordionn-item-headerr2.active::before {
+.accordionn-item-headerr2.active::after {
   content: "\2212";
   float: left;
   font-size: 1.5rem;

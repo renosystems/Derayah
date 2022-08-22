@@ -1,5 +1,7 @@
 .market-section {
   @include devices(tablet) {
+    height: 100%;
+
     &-right {
       background: url(../Images/marketSectionbg.png);
       background-size: 100%;
@@ -77,16 +79,15 @@
         padding: 1% 3%;
       }
     
-    //   &-flagDiv {
-    //     position: absolute;
-    //     top: 70%;
-    //   }
+      &-flagDiv {
+        margin-top: 60%;
+      }
     }
     &-btn {
       height: 60px;
       width: 120px;
       position: absolute;
-      top: 60%;
+      top: 50%;
       right: 60%;
       background-image: linear-gradient(to left, #2f163e, #452d51, #533e5e);
       border-radius: 10px;
@@ -113,8 +114,7 @@
   position: relative;
   margin: 0;
   width: 100%;
-  height: 100%;
-
+  
   background-color: $dark-purple;
 
   padding-bottom: 7%;
