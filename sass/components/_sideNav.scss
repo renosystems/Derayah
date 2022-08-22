@@ -17,13 +17,15 @@
 
         input{
             width: 85%;
+            height: 30px;
             border: none;
+            outline: none;
             display: inline;
         }
         &-inputDix{
             border: 1px solid $secondry-color;
             background-color: $light-color;
-            border-radius: 10px;
+            border-radius: 16px;
             padding: 5px 5px;
             margin-top: 10px;
         }

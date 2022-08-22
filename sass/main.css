@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "TheMixArabic";
   src: url(../../font/TheMixArabic/TheMixArabic-Light.eot);
@@ -36,6 +37,75 @@ html, body {
 
 .col-xs {
   width: 100%;
+}
+
+.theaccordion {
+  direction: rtl;
+  padding: 20px 0;
+  margin: 0 20px;
+  margin-top: 20px;
+  border-top: 1px solid #6c6b80;
+  border-bottom: 1px solid #6c6b80;
+}
+
+.Tbold {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.info {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.accordionn-itemm2 {
+  color: #111;
+  width: 100%;
+}
+
+.accordionn-item-headerr2 {
+  background-color: transparent;
+  color: #000;
+  width: 100%;
+  padding: 0.3rem 2rem 0.3rem 1rem;
+  min-height: 2.5rem;
+  line-height: 1.25rem;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: right;
+  position: relative;
+}
+
+.accordionn-item-headerr2::before {
+  content: "+";
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1rem;
+  float: left;
+}
+
+.accordionn-item-headerr2.active {
+  background-color: #351855;
+  color: #fff;
+}
+
+.accordionn-item-headerr2.active::before {
+  content: "−";
+  float: left;
+  font-size: 1.5rem;
+}
+
+.accordionn-item-bodyy2 {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: transparent;
+}
+
+.accordionn-item-body-contentt2 {
+  padding: 1rem;
+  line-height: 1.5rem;
 }
 
 .card-row {
@@ -1802,13 +1872,15 @@ html, body {
   }
   .sidenav input {
     width: 85%;
+    height: 30px;
     border: none;
+    outline: none;
     display: inline;
   }
   .sidenav-inputDix {
     border: 1px solid #FAF9F9;
     background-color: rgb(255, 255, 255);
-    border-radius: 10px;
+    border-radius: 16px;
     padding: 5px 5px;
     margin-top: 10px;
   }
