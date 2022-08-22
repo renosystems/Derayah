@@ -1,0 +1,143 @@
+.newestInDerarah{
+    @include devices(tablet) {
+        padding-right: 15%;
+        &-sideDiv {
+            width: 7%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: $accent-purple;
+          }
+          &-leftImg{
+            width: 350px;
+            height: 400px;
+            position: absolute;
+            bottom: 15%;
+          }
+          h6{
+            margin-bottom: 25px;
+            font-size: 20px;
+          }
+          h1{
+            font-size: 48px;
+            font-weight: bold;
+        }
+        &-CardImg{
+            width: 150px;
+            height: 150px;
+        }
+        &-card{
+            p{
+                font-size: 14px;
+            }
+            h5{
+                font-size: 22px;
+            }
+            &-text{
+                padding-right: 20px;
+            }
+        }
+    }
+     @include devices(mobile) {
+        padding-right: 2%;
+        padding-bottom: 30%;
+        &-sideDiv {
+            display: none;
+          }
+          &-leftImg{
+            position: absolute;
+            width: 97%;
+            height: 300px;
+            top: 21%;
+            left: 2%;
+          }
+          h6{
+            margin-bottom: 350px;
+            font-size: 16px;
+          }
+          h1{
+            font-size: 40px;
+            font-weight: 500;
+        }
+        &-CardImg{
+            width: 130px;
+            height: 130px;
+        }
+        &-card{
+            p{
+                font-size: 12px;
+            }
+            h5{
+                font-size: 16px;
+            }
+            &-text{
+                padding-right: 50px;
+            }
+        }
+    }
+    width: 100%;
+    height: 120%;
+    background: url(../Images/Frame1.svg);
+    background-size: 50%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: $newestBg;
+    position: relative;
+    padding-top: 7%;
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding-bottom: 5%;
+
+    p{
+        font-size: 16px;
+        color: $GrayScale;
+        display: inline-block;
+    }
+    h6{
+        color: $GrayScale;
+        margin-top: 15px;
+    }
+    &-line{
+        width: 40px;
+        height: 1px;
+        background-color: $side-menu-text;
+        display: inline-block;
+        margin-right: 5px;
+        margin-bottom: 3px;
+    }
+    &-CardImg{
+        border-radius: 20px;
+    }
+    &-card{
+        p{
+            color: $side-menu-text;
+        }
+    }
+    &-readMoreDiv{
+        width: 70px;
+        border-bottom: 1px solid $primary-color;
+        span{
+            font-size: 15px;
+            color: $primary-color;
+        }
+    }
+    &-leftImg{
+        background: url(../Images/leftImg.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        
+        &-footer{
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+
+            h4{
+                font-size: 20px;
+                color: $light-color;
+            }
+        }
+    }
+}

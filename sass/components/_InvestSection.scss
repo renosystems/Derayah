@@ -1,22 +1,108 @@
 .WhyInvestment{
+    @include devices(tablet) {
+        background-size: 45%;
+        padding-top: 13%;
+        height: 100%;
+        &-right-section{
+            padding-right: 15%;
+            h6{
+                font-weight: bold;
+            }
+            &-info{
+                right: 15%;
+            }
+            &-watch{
+                margin-top: 15%;
+                margin-right: 5%;
+                direction: rtl;
+                &--playV{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 15px;
+                    background-color: $orange-color;
+                    box-shadow: 5px;
+                    text-align: center;
+                    display: inline-block;
+                    i{
+                        margin: auto;
+                        font-size: 10px;
+                    }
+                }
+                &--playVRes{
+                    display: none;
+                }
+                img{
+                    width: 65%;
+                    height: 15%;
+                }
+            }
+        }
+    }
+     @include devices(mobile) {
+        background-size: 100%;
+        padding-top: 20%;
+        &-left-section{
+            direction: rtl;
+            padding-right: 6%;
+            }
+            &-right-section{
+                padding-right: 5%;
+                margin-top: 7%;
+                h6{
+                    font-weight: 300;
+                }
+                &-info{
+                    right: 5%;
+                    margin-bottom: 30px;
+                }
+                &-watch{
+                    margin-top: 25%;
+                    padding: 5% 0; 
+                    text-align: center;
+                    &--playV{
+                        display: none;
+                    }
+                    &--playVRes{
+                        width: 30px;
+                    height: 30px;
+                    border-radius: 15px;
+                    background-color: $orange-color;
+                    box-shadow: 5px;
+                    text-align: center;
+                    display: inline-block;
+                    i{
+                        margin: auto;
+                        font-size: 10px;
+                    }
+                    }
+                    img{
+                        width: 100px;
+                        height: 50px;
+                        display: block;
+                        transform: rotate(-90deg);
+                        margin: auto;
+                        margin-top: 50px;
+                        margin-bottom: 40px;
+                    }
+                }
+                
+            }
+    }
     margin: 0;
     position: relative;
     width: 100%;
-    height: 100vh;
-    background: url(../../Images/SecondSection_bg.png);
+    background: url(../Images/SecondSection_bg.png);
     background-color: $primary-color;
-    background-size: 45%;
     background-repeat: no-repeat;
     color: $light-color;
     text-align: right;
-    padding-top: 13%;
-
+   
+    
     &-left-section{
         direction: rtl;
         }
 
     &-right-section{
-        padding-right: 15%;
         padding-top: 1%;
 
         p{
@@ -26,7 +112,6 @@
 
         h6{
             font-size: 40px;
-            font-weight: bold;
             margin: 5% 0;
         }
         span{
@@ -41,32 +126,10 @@
         }
         &-info{
             position: absolute;
-            right: 15%;
             padding-bottom: 5px;
             width: 70px;
             border-bottom: .5px solid $light-color;
         }
-        &-watch{
-            margin-top: 15%;
-            margin-right: 5%;
-            direction: rtl;
-            &--playV{
-                width: 30px;
-                height: 30px;
-                border-radius: 15px;
-                background-color: $orange-color;
-                box-shadow: 5px;
-                text-align: center;
-                display: inline-block;
-                i{
-                    margin: auto;
-                    font-size: 10px;
-                }
-            }
-            img{
-                width: 65%;
-                height: 15%;
-            }
-        }
+        
     }
 }

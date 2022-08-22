@@ -1,17 +1,44 @@
+@mixin devices ($breakpoint) { //the name of the mixin is devices
+  
+    @if $breakpoint == tablet {    
+    @media only screen and (min-width: 482px) {
+      @content;
+    }
+  }
+ 
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 481px) {
+      @content;
+    }
+  }
+}
 @font-face {
-    font-family: TheMixArabic;
-    src: url(../../font/TheMixArabic/TheMixArabic/TheMixArabic-Plain.woff2) format(".woff2");
+    font-family: "TheMixArabic";
+    src: url(../../font/TheMixArabic/TheMixArabic-Light.eot);
+    src: url(../../font/TheMixArabic/TheMixArabic-Light.woff) format(".woff"),
+    url(../../font/TheMixArabic/TheMixArabic-Light.otf) format(".opentype"),
+    url(../../font/TheMixArabic/TheMixArabic-Light.svg) format(".svg");
+    
+}
+@font-face {
+    font-family: "TheMixArabic";
+    src: url(../../font/TheMixArabic/TheMixArabic-Bold.eot);
+    src: url(../../font/TheMixArabic/TheMixArabic-Bold.woff) format(".woff"),
+    url(../../font/TheMixArabic/TheMixArabic-Bold.otf) format(".opentype"),
+    url(../../font/TheMixArabic/TheMixArabic-Bold.svg) format(".svg");
+    font-weight: bold;
 }
 
 *{
     margin: 0;
     padding: 0;
-    font-family: TheMixArabic;
+    // font-family: 'TheMixArabic';
 }
 
-body{
+html,body{
     margin: 0;
     padding: 0;
+    height: 100%;
     background-color: $light-color;
 }
 .ORG{
@@ -24,4 +51,72 @@ body{
 .rot{
     transform: rotate(270deg);
     display: inline-block;
+}
+.col-xs{
+  width: 100%;
+}
+.theaccordion{
+  // width: 95%;
+  direction: rtl;
+  padding: 20px 0;
+  margin: 0 20px;
+  margin-top: 20px;
+  border-top: 1px solid $GrayScale;
+  border-bottom: 1px solid $GrayScale;
+}
+.Tbold{
+  font-weight: bold;
+  font-size: 18px;
+}
+.info{
+  font-size: 16px;
+  font-weight: 500;
+}
+.accordionn-itemm2 {
+  color: #111;
+  width: 100%;
+}
+.accordionn-item-headerr2 {
+  background-color: transparent;
+  color: #000;
+  width: 100%;
+  padding: 0.3rem 2rem 0.3rem 1rem;
+  min-height: 2.5rem;
+  line-height: 1.25rem;
+  font-size: 18px;  
+  font-weight: bold;
+  display: flex;
+  align-items: right;
+  position: relative;
+  // cursor: pointer;
+}
+.accordionn-item-headerr2::after {
+  content: "\002B";
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1rem;
+  float: left;
+}
+
+.accordionn-item-headerr2.active {
+  background-color: $blue-color;
+  color: #fff;
+}
+
+.accordionn-item-headerr2.active::after {
+  content: "\2212";
+  float: left;
+  font-size: 1.5rem;
+}
+
+.accordionn-item-bodyy2 {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: transparent; 
+}
+
+.accordionn-item-body-contentt2 {
+  padding: 1rem;
+  line-height: 1.5rem;
 }

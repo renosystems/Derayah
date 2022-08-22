@@ -1,6 +1,7 @@
-.side-menu{
+.side-menu {
+  @include devices(tablet) {
     width: 7%;
-    height: 100vh;
+    height: 100%;
     background-color: $accent-purple;
     position: absolute;
     top: 0;
@@ -9,34 +10,45 @@
     font-size: 14px;
     font-weight: 400;
     color: $light-color;
-    &--img{
-        width: 40px;
-        height: 35px;
+    padding-bottom: 45%;
+    &--img {
+      width: 40px;
+      height: 35px;
     }
-    &--text{
-        font-size: 16px;
-        font-weight: 500;
+    &--text {
+      font-size: 16px;
+      font-weight: 500;
+      transform: rotate(270deg);
+      margin-top: 100px;
+      margin-bottom: 90px;
+      &-light {
+        color: $side-menu-text;
+        font-size: 12px;
         transform: rotate(270deg);
-        margin-top: 100px;
-        margin-bottom: 90px;
-        &-light{
-            color: $side-menu-text;
-            font-size: 12px;
-            transform: rotate(270deg);
-            margin-top: 70px;
-        }
+        margin-top: 70px;
+      }
     }
-    &--line{
-        position: absolute;
-        left: 50%;
-        top: 85%;
-        width: 1px;
-        height: 55px;
-        background-color: $orange-color;
+    &--line {
+      position: absolute;
+      left: 50%;
+      top: 80%;
+      width: 1px;
+      height: 55px;
+      background-color: $orange-color;
     }
+  }
+  @include devices(mobile) {
+    display: none;
+  }
 }
-
-.image-slider{
-    width: 93%;
-    height: 85vh;
-}
+.image-slider {
+    @include devices(tablet) {
+        width: 93%;
+    height: 520px;
+    }
+     @include devices(mobile) {
+        width: 100%;
+        height: 600px;
+        content: url(../Images/slide_responsive.png);
+    }
+  }
