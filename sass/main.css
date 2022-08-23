@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "TheMixArabic";
   src: url(../../font/TheMixArabic/TheMixArabic-Light.eot);
@@ -39,73 +38,9 @@ html, body {
   width: 100%;
 }
 
-.theaccordion {
-  direction: rtl;
-  padding: 20px 0;
-  margin: 0 20px;
-  margin-top: 20px;
-  border-top: 1px solid #6c6b80;
-  border-bottom: 1px solid #6c6b80;
-}
-
 .Tbold {
   font-weight: bold;
   font-size: 18px;
-}
-
-.info {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.accordionn-itemm2 {
-  color: #111;
-  width: 100%;
-}
-
-.accordionn-item-headerr2 {
-  background-color: transparent;
-  color: #000;
-  width: 100%;
-  padding: 0.3rem 2rem 0.3rem 1rem;
-  min-height: 2.5rem;
-  line-height: 1.25rem;
-  font-size: 18px;
-  font-weight: bold;
-  display: flex;
-  align-items: right;
-  position: relative;
-}
-
-.accordionn-item-headerr2::after {
-  content: "+";
-  font-size: 1.5rem;
-  position: absolute;
-  right: 1rem;
-  float: left;
-}
-
-.accordionn-item-headerr2.active {
-  background-color: #351855;
-  color: #fff;
-}
-
-.accordionn-item-headerr2.active::after {
-  content: "−";
-  float: left;
-  font-size: 1.5rem;
-}
-
-.accordionn-item-bodyy2 {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: transparent;
-}
-
-.accordionn-item-body-contentt2 {
-  padding: 1rem;
-  line-height: 1.5rem;
 }
 
 .card-row {
@@ -1869,7 +1804,7 @@ html, body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #F9F9FB;
+    background-color: #FAF9F9;
     overflow-x: hidden;
     transition: 0.5s;
     direction: rtl;
@@ -1883,10 +1818,198 @@ html, body {
     display: inline;
   }
   .sidenav-inputDix {
-    border: 1px solid #FAF9F9;
+    border: 1px solid #e1e1e6;
     background-color: rgb(255, 255, 255);
     border-radius: 16px;
     padding: 5px 5px;
+    margin: 0 10px;
     margin-top: 10px;
   }
+  .sidenav-theaccordion {
+    direction: rtl;
+    padding: 20px 0;
+    margin: 0 30px;
+    margin-top: 20px;
+    border-top: 1px solid #e1e1e6;
+    border-bottom: 1px solid #e1e1e6;
+  }
+  .sidenav-itemm2 {
+    color: #111;
+    width: 100%;
+  }
+  .sidenav-item-headerr2 {
+    background-color: transparent;
+    color: #000;
+    width: 100%;
+    min-height: 2.5rem;
+    line-height: 1.25rem;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: right;
+    position: relative;
+    background: url(../Images/arrowLeft.png);
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+  .sidenav-info {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+.SidenavInvest i {
+  color: #242424;
+  font-size: 20px;
+}
+.SidenavInvest-topDiv {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10%;
+}
+.SidenavInvest-close {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  display: inline-block;
+}
+.SidenavInvest-back {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  display: inline-block;
+}
+.SidenavInvest-Title {
+  width: 100px;
+  border-bottom: 1px solid #EE8122;
+  margin-right: 10%;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+.SidenavInvest h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #EE8122;
+}
+.SidenavInvest-line {
+  width: 110px;
+  height: 1px;
+  background-color: #EE8122;
+  margin-right: 30px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.SidenavInvest h5 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #242424;
+}
+.SidenavInvest h6 {
+  font-size: 12px;
+  font-weight: 300;
+  color: #a1a0ae;
+}
+.SidenavInvest-row {
+  width: 100%;
+  padding: 10px 0;
+  padding-right: 85px;
+  direction: rtl;
+  position: relative;
+  margin-bottom: 10px;
+  line-height: 0.5rem;
+  background-color: transparent;
+}
+.SidenavInvest-row-iconDiv {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 35px;
+  background-color: #ededf4;
+  display: inline-block;
+}
+.SidenavInvest-accordion {
+  width: 93%;
+  background: url(../Images/arrow-down.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  padding: 10px 0;
+  padding-right: 85px;
+  direction: rtl;
+  position: relative;
+  margin-bottom: 20px;
+  line-height: 0.5rem;
+  background-color: transparent;
+}
+.SidenavInvest-accordion-iconDiv {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 35px;
+  background-color: #ededf4;
+  display: inline-block;
+}
+.SidenavInvest-accordion-iconDiv.active {
+  background-color: #F9F9FB;
+}
+.SidenavInvest-accordion-body {
+  margin-right: 85px;
+  margin-top: -15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: transparent;
+}
+.SidenavInvest-accordion.active {
+  width: 100%;
+  background: url(../Images/arrow-up.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-color: #ededf4;
+}
+.SidenavInvest-modal {
+  width: 90%;
+  height: 600px;
+  margin-left: 5%;
+  margin-top: 10%;
+  direction: rtl;
+  border-radius: 30px;
+}
+.SidenavInvest-modal-body {
+  padding-right: 30px;
+}
+.SidenavInvest-modal-body-send {
+  width: 120px;
+  height: 50px;
+  background-color: #510B76;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  direction: rtl;
+  padding: 10px 20px;
+  margin-top: 30px;
+  margin-right: 50%;
+  margin-bottom: 20px;
+}
+.SidenavInvest-modal-body-send span {
+  font-size: 15px;
+  display: inline;
+}
+.SidenavInvest-modal h1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #510B76;
+}
+.SidenavInvest-modal p {
+  font-size: 14px;
+}
+.SidenavInvest-modal input, .SidenavInvest-modal select {
+  width: 85%;
+  padding: 10px 7px;
+  border: 1px solid #a0a0a9;
+  border-radius: 20px;
+  color: #a0a0a9;
 }/*# sourceMappingURL=main.css.map */

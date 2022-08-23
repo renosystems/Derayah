@@ -1,0 +1,164 @@
+.SidenavInvest{
+    i{
+        color: $dark-color;
+        font-size: 20px;
+    }
+    &-topDiv{
+        position: relative;
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    &-close{
+        position: absolute;
+        top: 0;
+        left: 10%;
+        display: inline-block;
+    }
+    &-back{
+        position: absolute;
+        top: 0;
+        right: 10%;
+        display: inline-block;
+    }
+    &-Title{
+        width: 100px;
+        border-bottom: 1px solid $orange-color;
+        margin-right: 10%;
+        padding-bottom: 5px;
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+    h1{
+        font-size: 28px;
+        font-weight: bold;
+        color: $orange-color;
+    }
+    &-line{
+        width: 110px;
+        height: 1px;
+        background-color: $orange-color;
+        margin-right: 30px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    h5{
+        font-size: 14px;
+        font-weight: 500;
+        color: $dark-color;
+    }
+    h6{
+        font-size: 12px;
+        font-weight: 300;
+        color: $sideNav-text;
+    }
+    &-row{
+        width: 100%;
+        // height: 60px;
+        padding: 10px 0;
+        padding-right: 85px;
+        direction: rtl;
+        position: relative;
+        margin-bottom: 10px;
+        line-height: 0.5rem;
+        background-color: transparent;
+        &-iconDiv{
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            position: absolute;
+            top: 10px;
+            right: 35px;
+            background-color: $SerSection-div1;
+            display: inline-block;
+        }
+        
+    }
+    
+    &-accordion{
+        width: 93%;
+        background: url(../Images/arrow-down.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        padding: 10px 0;
+        padding-right: 85px;
+        direction: rtl;
+        position: relative;
+        margin-bottom: 20px;
+        line-height: 0.5rem;
+        background-color: transparent;
+        &-iconDiv{
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            position: absolute;
+            top: 10px;
+            right: 35px;
+            background-color: $SerSection-div1;
+            display: inline-block;
+        }
+        &-iconDiv.active{
+            background-color: $menu-color;
+        }
+        &-body{
+            margin-right:85px;
+            margin-top: -15px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: transparent; 
+        }
+    }
+    &-accordion.active{
+        width: 100%;
+        background: url(../Images/arrow-up.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-color: $SerSection-div1;
+        
+    }
+    &-modal{
+        width: 90%;
+        height: 600px;
+        margin-left: 5%;
+        margin-top: 10%;
+        direction: rtl;
+        border-radius: 30px;
+        &-body{
+            padding-right:30px;
+            &-send{
+                width: 120px;
+                height: 50px;
+                background-color: $primary-color;
+                border-radius: 20px;
+                color: $light-color;
+                direction: rtl;
+                padding: 10px 20px;
+                margin-top: 30px;
+                margin-right: 50%;
+                margin-bottom: 20px;
+                span{
+                    font-size: 15px;
+                    display: inline;
+                }
+            }
+        }
+       h1{
+        font-size: 20px;
+        font-weight: 500;
+        color: $primary-color;
+       }
+       p{
+        font-size: 14px;
+        // font-weight: 300;
+       }
+       input,select{
+        width: 85%;
+        padding: 10px 7px;
+        border: 1px solid $popup-text;
+        border-radius: 20px;
+        color: $popup-text;
+        
+       }
+
+    }
+}
