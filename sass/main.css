@@ -1930,6 +1930,12 @@ html, body {
   background-color: #ededf4;
   display: inline-block;
 }
+.SidenavInvest-row-iconDiv img {
+  width: 25px;
+  height: 25px;
+  margin-right: 7px;
+  margin-top: 7px;
+}
 .SidenavInvest-accordion {
   width: 93%;
   background: url(../Images/arrow-down.png);
@@ -1952,6 +1958,12 @@ html, body {
   right: 35px;
   background-color: #ededf4;
   display: inline-block;
+}
+.SidenavInvest-accordion-iconDiv img {
+  width: 25px;
+  height: 25px;
+  margin-right: 7px;
+  margin-top: 7px;
 }
 .SidenavInvest-accordion-iconDiv.active {
   background-color: #F9F9FB;
