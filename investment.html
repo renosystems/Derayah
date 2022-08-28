@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>investment page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
+      " rel="stylesheet"> <!--load all styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="sass/main.css">
+
+  </head>
+  <body>
+    <div class="">
+      <!-- top menu -->
+      <div class=" topMenu">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid pe-5">
+            <img class="navbar-brand topMenu-brand" src="./Images/logo.svg"/>
+            <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-0 mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle topMenu__text" href="#"
+                    id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    الاستثمار
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle topMenu__text" href="#"
+                    id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    التداول
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle topMenu__text" href="#"
+                    id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    التمويل
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link topMenu__text" href="#">دراية سمارت</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle topMenu__text" href="#"
+                    id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    الاخبار والمقالات
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle topMenu__text" href="#"
+                    id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    عن دراية
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#"></a></li>
+                    <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                  </ul>
+                </li>
+                <img class="navbar-brand" src="./Images/icon-search.png"/>
+              </ul>
+
+            </div>
+            <form class="d-flex ms-5">
+              <button class=" btn btn--rounded--sucess" type="submit">فتح حساب
+                جديد</button>
+              <button class=" btn btn--rounded" type="submit">تسجيل الدخول</button>
+            </form>
+          </div>
+        </nav>
+        <!-- end top menu -->
+
+
+        <!-- side menu -->
+        <div class=" side-menu col text-center">
+          <img src="Images/fi_globe.svg" alt="" class="side-menu--img1"/>
+          <p>ENGLISH</p>
+          <h4 class="side-menu--text">920024433</h4>
+          <p class="side-menu--text-light">الدعم الفني</p>
+          <p class="side-menu--text-light">الأتصال بنا</p>
+          <img src="Images/notify-icon.png" alt="" class="side-menu--img mt-4"/>
+          <div class="side-menu--line"></div>
+        </div>
+        <!-- end side menu -->
+      </div>
+      <!-- responsive design -->
+      <!-- top menu responsive -->
+      <div class="row topMenuRes">
+        <div class="col-2"><img class="topMenuRes-img1"
+            src="./Images/notify-icon.png" alt=""></div>
+        <div class="col-5 mt-2"><span>920024433</span></div>
+        <div class="col-5 pe-5">
+          <p>ENGLISH</p>
+          <img class="topMenuRes-img" src="./Images/fi_globe.svg" alt="">
+        </div>
+      </div>
+      <!-- Endtop menu responsive -->
+
+      <!-- navBar responsive -->
+      <div class="row navBarRes">
+        <div class="col-6"><img src="./Images/logo.svg" alt=""></div>
+        <div class="col-6 text-start">
+          <p>تسجيل الدخول</p>
+          <i class="fa-solid fa-bars" onclick="openNav('mySidenav')"></i>
+        </div>
+      </div>
+      <!-- End navBar responsive -->
+
+      <!-- scroll menu -->
+      <div id="mySidenav" class="sidenav">
+        <div class="ps-3 text-start">
+          <button type="button" class="btn-close"
+            onclick="closeNav()"></button>
+        </div>
+        <div class="input-group px-3">
+          <div class="form-outline w-100 sidenav-inputDix pe-3">
+            <i class="fa fa-search"></i>
+            <input type="search"
+              class="" placeholder="ادخل كلمات البحث" />
+            <i class="fa fa-close"></i>
+          </div>
+        </div>
+        <div class="sidenav-theaccordion">
+          <div class="sidenav-itemm2">
+            <div onclick="openNav('SidenavInvest')"
+              class="sidenav-item-headerr2">
+              الاستثمار
+            </div>
+          </div>
+          <div class="sidenav-itemm2">
+            <div onclick="openNav('SidenavTrading')"
+              class="sidenav-item-headerr2">
+              التداول
+            </div>
+          </div>
+
+          <div class="sidenav-itemm2">
+            <div onclick="openNav('SidenavFinance')"
+              class="sidenav-item-headerr2">
+              التمويل
+            </div>
+          </div>
+
+          <div class="sidenav-itemm2">
+            <div class="mb-3 Tbold">
+              دراية سمارت
+            </div>
+          </div>
+
+          <div class="sidenav-itemm2">
+            <div onclick="openNav('SidenavNews')"
+              class="sidenav-item-headerr2">
+              الاخبار والمقالات
+            </div>
+          </div>
+          <div class="sidenav-itemm2">
+            <div onclick="openNav('SidenavAbout')"
+              class="sidenav-item-headerr2">
+              عن دراية
+            </div>
+
+          </div>
+
+        </div>
+        <div class="me-4 mt-3">
+          <p class="sidenav-info">الدعم الفني</p>
+        </div>
+        <div class="me-4">
+          <p class="sidenav-info">الاتصال بنا</p>
+        </div>
+        <div class="me-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <p class="sidenav-info">لنتصل بك !</p>
+        </div>
+        <div class="mt-5 mx-4">
+          <button class=" btn btn--rounded--sucess rounded" type="submit">فتح
+            حساب
+            جديد</button>
+          <button class=" btn btn--rounded rounded" type="submit">تسجيل الدخول</button>
+        </div>
+      </div>
+
+      <div id="SidenavInvest" class="sidenav SidenavInvest">
+        <div class="px-3 SidenavInvest-topDiv">
+          <div class="SidenavInvest-close"><i class="fa fa-close"
+              onclick="closeNav('SidenavInvest')"></i></div>
+          <div class="SidenavInvest-back"><i class="fa fa-arrow-right"
+              onclick="backNav('SidenavInvest')"></i></div>
+        </div>
+        <div class="SidenavInvest-Title"><h1>الاستثمار</h1></div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_box.svg"
+              alt=""></div>
+          <h5>سوبر ماركت الصناديق الاستثمارية</h5>
+          <h6>سوبر ماركت الصناديق الاستثمارية</h6>
+        </div>
+        <div class="SidenavInvest-accordion">
+          <div class="SidenavInvest-accordion-iconDiv"><img
+              src="./Images/fi_copy.svg" alt=""></div>
+          <h5>الاستثمارات البديلة</h5>
+          <h6>الاستثمارات البديلة<h6>
+            </div>
+            <div class="SidenavInvest-accordion-body">
+              <div class="my-3">
+                <h5>مقارنة انواع الاستثمارات البديلة </h5>
+                <h6>صندوق دراية ريت</h6>
+              </div>
+              <div class="my-3">
+                <h5>صندوق دراية ريت</h5>
+                <h6>صندوق دراية ريت</h6>
+              </div>
+              <div class="my-3">
+                <h5>صناديق دراية العقارية المدرة للدخل</h5>
+                <h6>صناديق دراية العقارية المدرة للدخل</h6>
+              </div>
+              <div class="my-3">
+                <h5>صناديق دراية للتطوير العقاري</h5>
+                <h6>صناديق دراية للتطوير العقاري</h6>
+              </div>
+            </div>
+
+            <div class="SidenavInvest-accordion">
+              <div class="SidenavInvest-accordion-iconDiv"><img
+                  src="./Images/fi_bar-chart-2.svg" alt=""></div>
+              <h5>صناديق الأسهم</h5>
+              <h6>صناديق الأسهم<h6>
+                </div>
+                <div class="SidenavInvest-accordion-body">
+                  <div class="my-3">
+                    <h5>مقارنة انواع صناديق الأسهم</h5>
+                    <h6>صندوق دراية ريت</h6>
+                  </div>
+                  <div class="my-3">
+                    <h5>صناديق دراية الخليجي لأسهم النمو والدخل</h5>
+                    <h6>صناديق دراية العقارية المدرة للدخل</h6>
+                  </div>
+                  <div class="my-3">
+                    <h5>صناديق دراية المرن للأسهم السعودية</h5>
+                    <h6>صناديق دراية للتطوير العقاري</h6>
+                  </div>
+                </div>
+                <div class="SidenavInvest-accordion">
+                  <div class="SidenavInvest-accordion-iconDiv"><img
+                      src="./Images/fi_credit-card.svg" alt=""></div>
+                  <h5>ادارة المحافظ الخاصة</h5>
+                  <h6>ادارة المحافظ الخاصة</h6>
+                </div>
+                <div class="SidenavInvest-accordion-body">
+                  <div class="my-3">
+                    <h5>الأفراد</h5>
+                    <h6>صندوق دراية ريت</h6>
+                  </div>
+                  <div class="my-3">
+                    <h5>الشركات</h5>
+                    <h6>صناديق دراية العقارية المدرة للدخلh6>
+                    </div>
+                  </div>
+                  <div class="SidenavInvest-accordion">
+                    <div class="SidenavInvest-accordion-iconDiv"><img
+                        src="./Images/fi_compass.svg" alt=""></div>
+                    <h5>الاستشارات الاستثمارية</h5>
+                    <h6>الاستشارات الاستثمارية</h6>
+                  </div>
+                  <div class="SidenavInvest-accordion-body">
+                    <div class="my-3">
+                      <h5>الأفراد</h5>
+                      <h6>صندوق دراية ريت</h6>
+                    </div>
+                    <div class="my-3">
+                      <h5>الشركات</h5>
+                      <h6>صناديق دراية العقارية المدرة للدخلh6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="SidenavTrading" class="sidenav SidenavInvest">
+                    <div class="px-3 SidenavInvest-topDiv">
+                      <div class="SidenavInvest-close"><i class="fa fa-close"
+                          onclick="closeNav('SidenavTrading')"></i></div>
+                      <div class="SidenavInvest-back"><i class="fa
+                          fa-arrow-right" onclick="backNav('SidenavTrading')"></i></div>
+                    </div>
+                    <div class="SidenavInvest-Title"><h1>التداول</h1></div>
+                    <div class="SidenavInvest-row">
+                      <div class="SidenavInvest-row-iconDiv"><img
+                          src="./Images/fi_copy.svg" alt=""></div>
+                      <h5>مقارنة انواع التداول</h5>
+                      <h6>سوبر ماركت الصناديق الاستثمارية</h6>
+                    </div>
+                    <div class="SidenavInvest-row">
+                      <div class="SidenavInvest-row-iconDiv"><img
+                          src="./Images/fi_columns.svg" alt=""></div>
+                      <h5>منصة دراية</h5>
+                      <h6>سوبر ماركت الصناديق الاستثمارية</h6>
+                    </div>
+                    <div class="SidenavInvest-row">
+                      <div class="SidenavInvest-row-iconDiv"><img
+                          src="./Images/fi_globe2.svg" alt=""></div>
+                      <h5>منصة دراية</h5>
+                      <h6>سوبر ماركت الصناديق الاستثمارية</h6>
+                    </div>
+                    <div class="SidenavInvest-row">
+                      <div class="SidenavInvest-row-iconDiv"><img
+                          src="./Images/fi_trending-up.svg" alt=""></div>
+                      <h5>تداول أدوات الدخل الثابت<br> (الصكوك والسندات)</h5>
+                      <h6>سوبر ماركت الصناديق الاستثمارية</h6>
+                    </div>
+                    <div class="SidenavInvest-row">
+                      <div class="SidenavInvest-row-iconDiv"><img
+                          src="./Images/fi_dollar-sign.svg" alt=""></div>
+                      <h5>الأسعار والرسوم</h5>
+                      <h6>سوبر ماركت الصناديق الاستثمارية</h6>
+                    </div>
+
+                  </div>
+
+                  <div id="SidenavFinance" class="sidenav SidenavInvest">
+                    <div class="px-3 SidenavInvest-topDiv">
+                      <div class="SidenavInvest-close"><i class="fa fa-close"
+                          onclick="closeNav('SidenavFinance')"></i></div>
+                      <div class="SidenavInvest-back"><i class="fa
+                          fa-arrow-right" onclick="backNav('SidenavFinance')"></i></div>
+                    </div>
+                    <div class="SidenavInvest-Title"><h1>التمويل</h1></div>
+                    <div class="SidenavInvest-row">
+                      <div class="SidenavInvest-row-iconDiv"><img
+                          src="./Images/fi_copy.svg" alt=""></div>
+                      <h5>مقارنة انواع التمويل</h5>
+                      <h6>التمويل بالمرابحة</h6>
+                    </div>
+                    <div class="SidenavInvest-row">
+                      <div class="SidenavInvest-row-iconDiv"><img
+                          src="./Images/fi_shuffle.svg" alt=""></div>
+                      <h5>التمويل بالمرابحه</h5>
+                      <h6>التمويل بالمرابحة</h6>
+                    </div>
+                    <div class="SidenavInvest-row">
+                      <div class="SidenavInvest-row-iconDiv"><img
+                          src="./Images/fi_refresh-ccw.svg" alt=""></div>
+                      <h5>التداول بالهامش</h5>
+                      <h6>التداول بالهامش</h6>
+                    </div>
+                    <div class="SidenavInvest-row">
+                      <div class="SidenavInvest-row-iconDiv"><img
+                          src="./Images/fi_trending-up.svg" alt=""></div>
+                      <h5>التمويل المجاني</h5>
+                      <h6>التمويل المجاني</h6>
+                    </div>
+                    <div class="SidenavInvest-row">
+                      <div class="SidenavInvest-row-iconDiv"><img
+                          src="./Images/fi_alert-circle.svg" alt=""></div>
+                      <h5>مفاهيم تهمك</h5>
+                      <h6>مفاهيم تهمك</h6>
+                    </div>
+
+                  </div>
+
+                  <div id="SidenavNews" class="sidenav SidenavInvest">
+                    <div class="px-3 SidenavInvest-topDiv">
+                      <div class="SidenavInvest-close"><i class="fa fa-close"
+                          onclick="closeNav('SidenavNews')"></i></div>
+                      <div class="SidenavInvest-back"><i class="fa
+                          fa-arrow-right" onclick="backNav('SidenavNews')"></i></div>
+                    </div>
+                    <div class="me-4">
+                      <h1>الأخبار والمقالات</h1>
+                      <div class="SidenavInvest-line"></div>
+                    </div>
+                    <div class="SidenavInvest-row">
+                      <div class="SidenavInvest-row-iconDiv"><img
+                          src="./Images/fi_rss.svg" alt=""></div>
+                      <h5>اخبار ومستجدات دراية</h5>
+                      <h6>اخبار ومستجدات دراية</h6>
+                    </div>
+                    <div class="SidenavInvest-row">
+                      <div class="SidenavInvest-row-iconDiv"><img
+                          src="./Images/fi_file-text.svg" alt=""></div>
+                      <h5>ابرز المقالات</h5>
+                      <h6>ابرز المقالات</h6>
+                    </div>
+                  </div>
+
+                  <div id="SidenavAbout" class="sidenav SidenavInvest">
+                    <div class="px-3 SidenavInvest-topDiv">
+                      <div class="SidenavInvest-close"><i class="fa fa-close"
+                          onclick="closeNav('SidenavAbout')"></i></div>
+                      <div class="SidenavInvest-back"><i class="fa
+                          fa-arrow-right" onclick="backNav('SidenavAbout')"></i></div>
+                    </div>
+                    <div class="SidenavInvest-Title"><h1>عن دراية</h1></div>
+                    <div class="SidenavInvest-row">
+                      <div class="SidenavInvest-row-iconDiv"><img
+                          src="./Images/fi_smile.svg" alt=""></div>
+                      <h5>نبذة عن دراية</h5>
+                      <h6>نبذة عن دراية</h6>
+                    </div>
+                    <div class="SidenavInvest-row">
+                      <div class="SidenavInvest-row-iconDiv"><img
+                          src="./Images/fi_copy.svg" alt=""></div>
+                      <h5>مقارنة بين دراية والجهات الاخري</h5>
+                      <h6>نبذة عن دراية/h6>
+                      </div>
+                      <div class="SidenavInvest-row">
+                        <div class="SidenavInvest-row-iconDiv"><img
+                            src="./Images/fi_award.svg" alt=""></div>
+                        <h5>الهيئة الشرعية</h5>
+                        <h6>الهيئة الشرعية</h6>
+                      </div>
+                      <div class="SidenavInvest-row">
+                        <div class="SidenavInvest-row-iconDiv"><img
+                            src="./Images/fi_users.svg" alt=""></div>
+                        <h5>مجلس ادارتنا</h5>
+                        <h6>مجلس ادارتنا</h6>
+                      </div>
+                      <div class="SidenavInvest-row">
+                        <div class="SidenavInvest-row-iconDiv"><img
+                            src="./Images/fi_flag.svg" alt=""></div>
+                        <h5>فريق دراية</h5>
+                        <h6>فريق دراية</h6>
+                      </div>
+                      <div class="SidenavInvest-row">
+                        <div class="SidenavInvest-row-iconDiv"><img
+                            src="./Images/fi_grid.svg" alt=""></div>
+                        <h5>الهيكل التنظيمي</h5>
+                        <h6>الهيكل التنظيمي</h6>
+                      </div>
+                      <div class="SidenavInvest-row">
+                        <div class="SidenavInvest-row-iconDiv"><img
+                            src="./Images/fi_file-text.svg" alt=""></div>
+                        <h5>التقارير</h5>
+                        <h6>التقارير والمقالات</h6>
+                      </div>
+                      <div class="SidenavInvest-row">
+                        <div class="SidenavInvest-row-iconDiv"><img
+                            src="./Images/fi_columns.svg" alt=""></div>
+                        <h5>الاجراءات</h5>
+                        <h6>الاجراءات</h6>
+                      </div>
+
+                    </div>
+
+                    <div class="modal fade SidenavInvest-modal"
+                      id="exampleModal" tabindex="-1"
+                      aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog ">
+                        <div class="modal-content">
+                          <div class="modal-body SidenavInvest-modal-body">
+                            <div class="px-3 SidenavInvest-topDiv">
+                              <div class="SidenavInvest-close"
+                                data-bs-dismiss="modal" aria-label="Close"><i
+                                  class="fa fa-close"></i></div>
+                            </div>
+                            <h1>لنتصل بك</h1>
+                            <p class="my-4">أرسل لنا اسمك ورقم هاتفك, وسوف <br>
+                              نتصل بك في اقرب وقت ممكن.</p>
+                            <p>الاسم الثلاثي</p>
+                            <input type="text" placeholder="الاسم الثلاثي">
+                            <p class="mt-4">رقم الهاتف</p>
+                            <input type="number" placeholder="901xxxxxxxx+">
+                            <p class="mt-4">نوع الاستفسار</p>
+                            <select name="cars" id="cars">
+                              <option value="volvo">اختر نوع الاستفسار</option>
+                            </select>
+                            <div class="SidenavInvest-modal-body-send">
+                              <span>ارسال</span>
+                              <i class="fa fa-arrow-left"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- hero slider -->
+                    <div id="carouselExampleSlidesOnly" class="carousel slide"
+                      data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Images/inves_slider.png" class="d-block
+                            image-sliderInvest"
+                            alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Images/inves_slider.png" class="d-block
+                            image-sliderInvest"
+                            alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Images/inves_slider.png" class="d-block
+                            image-sliderInvest"
+                            alt="...">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end hero slider -->
+
+                    <!-- About derayah market section -->
+                    <div class="AboutMarket">
+                      <h1>نبذة عن سوبر ماركت الصناديق الاستثمارية</h1>
+                      <div class="AboutMarket-info"><p>من خلال هذه الخدمة تتيح
+                          شركة دراية المالية للعميل الاستثمار
+                          في مجموعة واسعه من الصناديق الاستثمارية (ما يقارب(60)
+                          ستين صندوق استثماري), تدار هذه الصناديق من قبل (10)
+                          عشرة مدراء مختلفين.
+                        </p></div>
+                      <div class="AboutMarket-playVideo"></div>
+                    </div>
+                    <!-- End About derayah market section -->
+
+                    <!-- Advantages section -->
+                    <div class="Derayah_advantages">
+                      <h1>المزايا والفوائد</h1>
+                      <p>من خلال هذه الخدمه تتيح شركه دراية المالية للعميل
+                        الاستثمار في مجموعه
+                        واسعة من الصناديق الاستثمارية (ما يقارب(60) ستين صندوق
+                        استثماري ). تدار هذه الصناديق
+                        من قبل (10) عشرة مدراء مختلفين.
+                      </p>
+                      <div class="Derayah_advantages-cover">
+
+                        <div class="row Derayah_advantages-row Derayah_advantages-rowRes">
+                          <div class="Derayah_advantages-card">
+                            <div class="Derayah_advantages-card-iconDiv"><img
+                                src="./Images/fi_star.svg" alt=""></div>
+                            <h6>الأفضل مشورة</h6>
+                            <span>بالاضافة الي استقلاليتنا في دراية , فقد طورنا
+                              العديد من الاليات الحصرية التي تساعد
+                              المستثمر علي تكوين محافظ متنوعة وعلي انتقاء
+                              المنتجات الأفضل.
+                            </span>
+                          </div>
+                          <div class="Derayah_advantages-card">
+                            <div class="Derayah_advantages-card-iconDiv"><img
+                                src="./Images/fi_smile.svg" alt=""></div>
+                            <h6>الأكثر راحة</h6>
+                            <span>لن تحتاج الي فتح حسابات متعددة;أو حفظ أسماء
+                              دخول مختلفة لأن دراية تتيح لك الاستثمار
+                              في كافة المنتجات الاستثمارية من مكان واحد, بل أصبح
+                              بامكانك متابعه كل استثماراتك واراداتها
+                              عبر موقع حساب واحد.
+                            </span>
+                          </div>
+                          <div class="Derayah_advantages-card">
+                            <div class="Derayah_advantages-card-iconDiv"><img
+                                src="./Images/fi_layers.svg" alt=""></div>
+                            <h6>الأكثر تنويعا</h6>
+                            <span>تمكنك دراية من الاستثمار في أكثر من 60 منتج
+                              استثماري من 10 مدراء مختلفين. هذه المنتجات تستثمر
+                              في كافة الفئات الاستثمارية (كالأسهم, والصكوك,
+                              والمرابحة...الخ ) والأسواق كما يمكنك
+                              التداول في ما يزيد عن 1,200 من الصناديق المؤشرات
+                              المتداولة ETF
+                            </span>
+                          </div>
+                        </div>
+                        <div class="row Derayah_advantages-row">
+                          <div class="Derayah_advantages-card">
+                            <div class="Derayah_advantages-card-iconDiv"><img
+                                src="./Images/fi_dollar-sign.svg" alt=""></div>
+                            <h6>وبلا تكلفة اضافية</h6>
+                            <span>كافة المنتجات الاستثمارية متاحة بنفس التكلفة
+                              المتاحة عند الاستثمار مع الجهة الاستثمارية مباشرة
+                              (أي بدون أي رسوم اضافية).
+                            </span>
+                          </div>
+                          <div class="Derayah_advantages-card">
+                            <div class="Derayah_advantages-card-iconDiv"><img
+                                src="./Images/fi_trending-up.svg" alt=""></div>
+                            <h6>الأكثر شفافية</h6>
+                            <span>أصبح من السهل عليك المقارنة بين المنتجات التي
+                              تقدمها دراية من خلال حساب موحد بشكل
+                              شفاف لانتقاء الأفضل من بينها.
+                            </span>
+                          </div>
+                          <div class="Derayah_advantages-card">
+                            <div class="Derayah_advantages-card-iconDiv"><img
+                                src="./Images/fi_thumbs-up.svg" alt=""></div>
+                            <h6>الأكثر استقلالية</h6>
+                            <span>دراية تركز علي جمع كافة المنتجات الاستثمارية
+                              تحت سقف واحد بدلا من التركيز علي بيع منتجات
+                              بعينها,الأمر الذي يعطيها قدر أكبر من الاستقلالية
+                              والحيادية في تعاملها ومشورتها.
+                            </span>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <!-- End Advantages section -->
+
+                    <!-- Fund Providers section -->
+                    <div class="Provider-section">
+                      <div class="">
+                        <div class="row">
+                          <div class="col-lg-4 col-xs-12">
+                            <h1>مقدمو الصناديق الاستثمارية</h1>
+                            <p>من خلال هذه الخدمة تتيح شركة دراية المالية للعميل الاستثمار في مجموعة واسعة
+                              من الصناديق الاستثمارية (ما يقارب (60) ستين صندوق استثماري ),
+                              تدار هذه الصناديق من قبل (10) عشرة مدراء مختلفين.
+                            </p>
+                            <div class="Provider-section-rightDiv active">
+                              <img src="./Images/icon1.png" alt="">
+                              <span>العربي للاستثمار</span>
+                            </div>
+                            <div class="Provider-section-rightDiv pc">
+                              <img src="./Images/icon2.png" alt="">
+                              <span>شركة اصول وبخيت الاستثمارية</span>
+                            </div>
+                            <div class="Provider-section-rightDiv pc">
+                              <img src="./Images/icon3.png" alt="">
+                              <span>الأهلي كابيتال</span>
+                            </div>
+                            <div class="Provider-section-rightDiv pc">
+                              <img src="./Images/icon4.png" alt="">
+                              <span>جدوي للاستثمار</span>
+                            </div>
+                            <div class="Provider-section-rightDiv pc">
+                              <img src="./Images/icon5.png" alt="">
+                              <span>سامبا كابيتال</span>
+                            </div>
+                            <div class="Provider-section-rightDiv pc">
+                              <img src="./Images/icon6.png" alt="">
+                              <span>صائب بي ان بي باريبا لادارة الأصول</span>
+                            </div>
+                            <div class="Provider-section-rightDiv pc">
+                              <img src="./Images/icon7.png" alt="">
+                              <span>الأول للاستثمار</span>
+                            </div>
+                            <div class="Provider-section-rightDiv pc">
+                              <img src="./Images/icon8.png" alt="">
+                              <span>الراجحي المالية</span>
+                            </div>
+                          </div>
+                          <div class="col-lg-8 col-xs-12">
+                            <div class="Provider-section-leftDiv">
+                              <div class="Provider-section-leftDiv-card">
+                                <h6>المبارك للاسهم النقية</h6>
+                                <div class="my-3"><span>المؤهلين للاستفادة من هذا النوع من التمويلات هم اصحاب المشاريع الصغيرة.</span></div>
+                                <div class="Provider-section-leftDiv-card-btn">خصائص الصندوق
+                                  <img src="./Images/fi_download.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="Provider-section-leftDiv-card">
+                                <h6>المبارك لمتاجرة الريال</h6>
+                                <div class="my-3"><span>المؤهلين للاستفادة من هذا النوع من التمويلات هم اصحاب المشاريع الصغيرة.</span></div>
+                                <div class="Provider-section-leftDiv-card-btn">خصائص الصندوق
+                                  <img src="./Images/fi_download.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="Provider-section-leftDiv-card">
+                                <h6>المبارك لمتاجرة الدولار</h6>
+                                <div class="my-3"><span>المؤهلين للاستفادة من هذا النوع من التمويلات هم اصحاب المشاريع الصغيرة.</span></div>
+                                <div class="Provider-section-leftDiv-card-btn">خصائص الصندوق
+                                  <img src="./Images/fi_download.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="Provider-section-leftDiv-card">
+                                <h6>صائب للصكوك</h6>
+                                <div class="my-3"><span>المؤهلين للاستفادة من هذا النوع من التمويلات هم اصحاب المشاريع الصغيرة.</span></div>
+                                <div class="Provider-section-leftDiv-card-btn">خصائص الصندوق
+                                  <img src="./Images/fi_download.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="Provider-section-leftDiv-card">
+                                <h6>اليسر للمرابحة بالريال السعودي</h6>
+                                <div class="my-3"><span>المؤهلين للاستفادة من هذا النوع من التمويلات هم اصحاب المشاريع الصغيرة.</span></div>
+                                <div class="Provider-section-leftDiv-card-btn">خصائص الصندوق
+                                  <img src="./Images/fi_download.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="Provider-section-leftDiv-card">
+                                <h6>المبارك للاسهم النقية</h6>
+                                <div class="my-3"><span>المؤهلين للاستفادة من هذا النوع من التمويلات هم اصحاب المشاريع الصغيرة.</span></div>
+                                <div class="Provider-section-leftDiv-card-btn">خصائص الصندوق
+                                  <img src="./Images/fi_download.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="Provider-section-leftDiv-card">
+                                <h6>المبارك لمتاجرة الريال</h6>
+                                <div class="my-3"><span>المؤهلين للاستفادة من هذا النوع من التمويلات هم اصحاب المشاريع الصغيرة.</span></div>
+                                <div class="Provider-section-leftDiv-card-btn">خصائص الصندوق
+                                  <img src="./Images/fi_download.svg" alt="">
+                                </div>
+                              </div>
+        
+                            </div>
+                            <div class="Provider-section-rightDiv responsive">
+                              <img src="./Images/icon2.png" alt="">
+                              <span>شركة اصول وبخيت الاستثمارية</span>
+                            </div>
+                            <div class="Provider-section-rightDiv responsive">
+                              <img src="./Images/icon3.png" alt="">
+                              <span>الأهلي كابيتال</span>
+                            </div>
+                            <div class="Provider-section-rightDiv responsive">
+                              <img src="./Images/icon4.png" alt="">
+                              <span>جدوي للاستثمار</span>
+                            </div>
+                            <div class="Provider-section-rightDiv responsive">
+                              <img src="./Images/icon5.png" alt="">
+                              <span>سامبا كابيتال</span>
+                            </div>
+                            <div class="Provider-section-rightDiv responsive">
+                              <img src="./Images/icon6.png" alt="">
+                              <span>صائب بي ان بي باريبا لادارة الأصول</span>
+                            </div>
+                            <div class="Provider-section-rightDiv responsive">
+                              <img src="./Images/icon7.png" alt="">
+                              <span>الأول للاستثمار</span>
+                            </div>
+                            <div class="Provider-section-rightDiv responsive">
+                              <img src="./Images/icon8.png" alt="">
+                              <span>الراجحي المالية</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Fund Providers section -->
+
+                    <!-- how to Subscription section -->
+                    <div class="Subscrip">
+                      <h1>كيفية الاشتراك</h1>
+                      <p>يمكنك التقدم بطلب التمويل المجاني عن طريق منصة دراية . قم بتسجيل الدخول 
+                        للمنصة والذهاب الي قسم التمويل
+                      </p>
+                      <div class="Subscrip-btn">التقدم بطلب تمويل</div>
+                      <div class="Subscrip-Cdiv row">
+                        <div class="col-lg-6 col-xs-12"><img src="./Images/howSubLeftDiv.png" alt=""></div>
+                        <div class="col-lg-6 col-xs-12 Subscrip-Cdiv-rightDiv">
+                          <div class="Subscrip-Cdiv-rightDiv-card row">
+                            <div class="col-9">
+                            <h1>تسجيل الدخول </h1>
+                            <span>قم بتسجيل الدخول الي حسابك في منصة دراية, من خلال الضغط علي تسجيل الدخول.</span>
+                            </div>
+                            <div class="col-3 text-end">
+                              <div class="Subscrip-Cdiv-rightDiv-card-icon"><img src="./Images/playIcon.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="Subscrip-Cdiv-rightDiv-card row active">
+                            <div class="col-9">
+                            <h1>اختيار الصندوق</h1>
+                            <span>تصفح الصناديق كاملة من القائمة الرئيسية ,ثم قم بالدخول الي الصندوق المراد.</span>
+                            </div>
+                            <div class="col-3 text-end">
+                              <div class="Subscrip-Cdiv-rightDiv-card-icon"><img src="./Images/playIcon2.png" alt=""></div>
+                            </div>
+                          </div>
+                          <div class="Subscrip-Cdiv-rightDiv-card row">
+                            <div class="col-9">
+                            <h1>طلب اشتراك </h1>
+                            <span>اضغط علي طلب اشتراك الموجود في صفحة الصندوق المراد الاشتراك به.</span>
+                            </div>
+                            <div class="col-3">
+                              <div class="Subscrip-Cdiv-rightDiv-card-icon"><img src="./Images/playIcon.png" alt=""></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End how to Subscription section -->
+
+                    <!-- quetion section -->
+                    <div class="QuestionSec">
+                      <h1>الاسئلة الشائعة</h1>
+                      <p>يمكنك تصفح الأسئلة الشائعة حول هذه الخدمة ,<br> اذا لم يكن سؤالك متوفر هنا 
+                        يمكنك التواصل معنا.
+                      </p>
+                      <div class="QuestionSec-infoDiv">
+                        <h5 class="QuestionSec-infoDiv-title">من هم المؤهلين للأستفادة من التمويل المجاني؟</h5>
+                        <img class="QuestionSec-infoDiv-toggel active" src="./Images/Component.svg" alt="">
+                        <h6>المؤهلين للاستفادة من هذا النوع من التمويلات هم اصحاب المشاريع الصغيرة
+                          الذين يتطلعون الي تمويلات سريعه وصغيرة الوقت. <br>
+                          المؤهلين للاستفادة من هذا النوع من التمويلات هم اصحاب المشاريع الصغيرة الذين يتطلعون 
+                          الي تمويلات سريعة وصغيرة الوقت. </h6>
+                      </div>
+                      <div class="QuestionSec-infoDiv">
+                        <h5 class="QuestionSec-infoDiv-title">من هم المؤهلين للأستفادة من التمويل المجاني؟</h5>
+                        <img class="QuestionSec-infoDiv-toggel active" src="./Images/Component.svg" alt="">
+                        <h6>المؤهلين للاستفادة من هذا النوع من التمويلات هم اصحاب المشاريع الصغيرة
+                          الذين يتطلعون الي تمويلات سريعه وصغيرة الوقت. <br>
+                          المؤهلين للاستفادة من هذا النوع من التمويلات هم اصحاب المشاريع الصغيرة الذين يتطلعون 
+                          الي تمويلات سريعة وصغيرة الوقت. </h6>
+                      </div>
+                      <div class="QuestionSec-infoDiv">
+                        <h5 class="QuestionSec-infoDiv-title">من هم المؤهلين للأستفادة من التمويل المجاني؟</h5>
+                        <img class="QuestionSec-infoDiv-toggel active" src="./Images/Component.svg" alt="">
+                        <h6>المؤهلين للاستفادة من هذا النوع من التمويلات هم اصحاب المشاريع الصغيرة
+                          الذين يتطلعون الي تمويلات سريعه وصغيرة الوقت. <br>
+                          المؤهلين للاستفادة من هذا النوع من التمويلات هم اصحاب المشاريع الصغيرة الذين يتطلعون 
+                          الي تمويلات سريعة وصغيرة الوقت. </h6>
+                      </div>
+                      <div class="QuestionSec-infoDiv">
+                        <h5 class="QuestionSec-infoDiv-title">من هم المؤهلين للأستفادة من التمويل المجاني؟</h5>
+                        <img class="QuestionSec-infoDiv-toggel active" src="./Images/Component.svg" alt="">
+                        <h6>المؤهلين للاستفادة من هذا النوع من التمويلات هم اصحاب المشاريع الصغيرة
+                          الذين يتطلعون الي تمويلات سريعه وصغيرة الوقت. <br>
+                          المؤهلين للاستفادة من هذا النوع من التمويلات هم اصحاب المشاريع الصغيرة الذين يتطلعون 
+                          الي تمويلات سريعة وصغيرة الوقت. </h6>
+                      </div>
+                      <div class="QuestionSec-infoDiv">
+                        <h5 class="QuestionSec-infoDiv-title">من هم المؤهلين للأستفادة من التمويل المجاني؟</h5>
+                        <img class="QuestionSec-infoDiv-toggel active" src="./Images/Component.svg" alt="">
+                        <h6>المؤهلين للاستفادة من هذا النوع من التمويلات هم اصحاب المشاريع الصغيرة
+                          الذين يتطلعون الي تمويلات سريعه وصغيرة الوقت. <br>
+                          المؤهلين للاستفادة من هذا النوع من التمويلات هم اصحاب المشاريع الصغيرة الذين يتطلعون 
+                          الي تمويلات سريعة وصغيرة الوقت. </h6>
+                      </div>
+                    </div>
+                    <!-- End quetion section -->
+
+                    <!-- footer  -->
+                    <div class="footerSec">
+                      <div class="footerSec-side"></div>
+                      <div class="footerSec-callUs row">
+                        <div class="col-lg-1"><i class="fa fa-phone-volume"></i></div>
+                        <div class="col-lg-3"> <p>اتصل بنا الان</p></div>
+                        <div class="col-lg-4">
+                          <h6>الاتصال عن طريق الهاتف</h6>
+                          <h1>920024433</h1>
+                        </div>
+                        <div class="col-lg-4">
+                          <h6>تواصل من خلال الموقع</h6>
+                          <div class="footerSec-callUs-btn">
+                            <h5>اذهب الي الاتصال </h5>
+                            <i class="fa fa-arrow-left"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="footerSec-body">
+                        <div class="d-flex flex-column h-100">
+                          <footer class="py-4">
+                            <div class="container footerSec-body-Res pt-4">
+                              <div class="row">
+                                <div class="col-lg-3 col-md-6
+                                  footerSec-body-text">
+                                  <img src="./Images/footerLogo.png" alt="">
+                                  <div class="my-2"><span>2020 @ دراية المالية
+                                      جميع الحقوق
+                                      محفوظة. باستخدام هذا <br>
+                                      الموقع. فأنك توافق علي <u>شروط الخدمات
+                                        والخصوصية</u></span></div>
+                                  <p class="footerSec-body-header">قم بتنزيل
+                                    تطبيقنا</p>
+                                  <div>
+                                    <div class="footerSec-body-downloadImg"></div>
+                                    <div class="footerSec-body-downloadIm2"></div>
+                                    <!-- <img src="./Images/download1.png" alt=""> -->
+                                    <!-- <img class="footerSec-body-downloadImg" src="./Images/download2.png" alt=""> -->
+                                  </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-xs-12
+                                  footerSec-body-Ttext">
+                                  <p class="footerSec-body-header">الحلول</p>
+                                  <ul class="list-unstyled">
+                                    <li><p>دراية سمارت</p></li>
+                                    <li><p>منصة دراية</p></li>
+                                    <li><p>منصة دراية جلوبال</p></li>
+                                    <li><p>سوبر ماركت الصناديق</p></li>
+                                    <li><p>الأسعار والرسوم</p></li>
+                                  </ul>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-xs-12
+                                  footerSec-body-Ttext">
+                                  <p class="footerSec-body-header">الشركة</p>
+                                  <ul class="list-unstyled">
+                                    <li><p>من نحن </p></li>
+                                    <li><p>دعم العملاء</p></li>
+                                    <li><p>الوظايف</p></li>
+                                    <li><p>ارشادات أمنية</p></li>
+                                    <li><p>الأسئلة الشائعة</p></li>
+                                    <li><p>خريطة الموقع</p></li>
+                                  </ul>
+                                </div>
+                                <div class="col-lg-3 col-md-6
+                                  footerSec-body-text2">
+                                  <p class="footerSec-body-header">قم بتنزيل
+                                    تطبيقنا</p>
+                                  <div>
+                                    <div class="footerSec-body-downloadImg"></div>
+                                    <div class="footerSec-body-downloadIm2"></div>
+                                    <!-- <img src="./Images/download1.png" alt=""> -->
+                                    <!-- <img class="footerSec-body-downloadImg" src="./Images/download2.png" alt=""> -->
+                                  </div>
+                                </div>
+                                <div class="col-lg-5 col-md-6 col-xs-12
+                                  footerSec-body-Ttext">
+                                  <p class="footerSec-body-header">اشترك في نشرة
+                                    دراية
+                                    الاخبارية</p>
+                                  <div class="mt-2 mb-3">
+                                    <p>سيتم ارسال أخر الأخبار حول الأسواق
+                                      العالمية وأحدث
+                                      المقالات <br> الي صندوق الوارد
+                                      الخاص بك علي أساس أسبوعي.</p></div>
+                                  <form action="#">
+                                    <div class="mb-3">
+                                      <div class="footerSec-body-input-group ">
+                                        <button class="footerSec-body-Sub-btn"
+                                          type="button">الاشتراك</button>
+                                        <input
+                                          class="footerSec-body-footer-input"
+                                          type="text"
+                                          placeholder="أدخل عنوان بريدك
+                                          الالكتروني">
+                                      </div>
+                                      <div class="row footerSec-body-iconDiv
+                                        mt-2 ">
+                                        <div class="footerSec-body-footer-icon"><i
+                                            class="fa-brands fa-linkedin-in"></i></div>
+                                        <div class="footerSec-body-footer-icon"><i
+                                            class="fa-brands fa-youtube"></i></div>
+                                        <div class="footerSec-body-footer-icon"><i
+                                            class="fa-brands fa-twitter"></i></div>
+                                        <div class="footerSec-body-footer-icon"><i
+                                            class="fa-brands fa-facebook-f"></i></div>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                                <div class="col-lg-3 col-md-6
+                                  footerSec-body-text2">
+                                  <img src="./Images/footerLogo.png" alt="">
+                                  <div class="my-2"><span>2020 @ دراية المالية
+                                      جميع الحقوق
+                                      محفوظة. باستخدام هذا <br>
+                                      الموقع. فأنك توافق علي <u>شروط الخدمات
+                                        والخصوصية</u></span></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row text-center mt-5 pt-2
+                              footerSec-body-copyright">
+                              <p class="footerSec-body-header">دراية المالية
+                                .ص-ب:286546
+                                الرياض 11323 المملكة العربية السعودية بترخيص من
+                                هيئة السوق
+                                المالية 08109-27</p>
+                            </div>
+                          </footer>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End footer  -->
+                    <script
+                      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+                      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+                      crossorigin="anonymous"></script>
+                    <script src="./script.js"></script>
+                  </body>
+                </html>

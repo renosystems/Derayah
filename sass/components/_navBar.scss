@@ -12,6 +12,10 @@
     &__text {
       margin-left: 10px;
     }
+    &-brand{
+      width: 80px;
+      height: 60px;
+    }
   }
 
   @include devices(mobile) {
