@@ -53,7 +53,7 @@ function openLeftSection(sectionName, elmnt) {
   );
   QuestionHeaders.forEach((accordionItemHeader) => {
     accordionItemHeader.addEventListener("click", (event) => {
-
+      accordionItemHeader.classList.toggle("active");
       const accordionItemBody2 = accordionItemHeader.nextElementSibling;
       if (accordionItemHeader.classList.contains("active")) {
         accordionItemBody2.style.maxHeight =
