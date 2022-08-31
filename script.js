@@ -63,6 +63,15 @@ function openLeftSection(sectionName, elmnt) {
       }
     });
   });
+  const MegaMenuHeaders = document.querySelectorAll(
+    ".topMenu__text"
+  );
+  MegaMenuHeaders.forEach((MegaMenuHeader) => {
+    MegaMenuHeader.addEventListener("click", (event) => {
+      MegaMenuHeader.classList.toggle("active");
+      
+    });
+  });
   // accordionItemDiv2.forEach((accordionItemDiv2) => {
   //   accordionItemDiv2.addEventListener("click", (event) => {
   //     accordionItemDiv2.classList.toggle("active");

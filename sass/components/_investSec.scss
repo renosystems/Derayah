@@ -1,0 +1,104 @@
+.InvestSection{
+    
+    @include devices(tablet) {
+        width: 93%;
+        height: 530px;
+        background-color: $primary-color;
+        position: relative;
+        color: $light-color;
+        text-align: right;
+        direction: rtl;
+
+        h6{
+            font-size: 16px;
+            font-weight: 900;
+            margin-left: 50px;
+            display: inline;
+        }
+        a{
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 900;
+            margin-left: 50px;
+            display: inline;
+            color: $light-color;
+        }
+        h1{
+            font-size: 40px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 500;
+        }
+        &-mainSec{
+            padding-top: 10%;
+            padding-right: 10%;
+            img{
+                width: 16px;
+                height: 16px;
+                display: inline;
+            }
+        }
+        &-callMe{
+            width: 50px;
+            height: 250px;
+            background-color: $light-color;
+            border-radius: 0px 20px 20px 0px;
+            position: fixed;
+            left: 0;
+            bottom: 70px;
+            z-index: 1;
+            color: $primary-color;
+            // text-align: center;
+            // padding: 0 15px;
+            padding-top: 50px;
+            h5{
+                font-size: 18px;
+                font-weight: 500;
+                transform: rotate(-90deg);
+                width: 90px;
+                margin-top: 15px;
+                margin-left: 15px;
+            }
+            img{
+                width: 45px;
+                height: 45px;
+                margin-right: 5px;
+                margin-top: 20px;
+            }
+            &-line{
+                width: 2px;
+                height: 45px;
+                background-color: $primary-color;
+                margin: auto;
+                margin-top: 5px;
+            }
+        }
+        &-TopBar{
+            width: 100%;
+            height: 70px;
+            position: absolute;
+            bottom: 0;
+            background-color: $Hsubs_bg;
+            text-align: center;
+            padding-top: 20px;
+        }
+        &-leftImg{
+            width: 500px;
+            height: 400px;
+            box-shadow: 15px 15px 50px rgba(143, 81, 211, 0.1);
+            border-radius: 0px 0px 40px 0px;
+            background: url(../Images/topSecBg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+     @include devices(mobile) {
+        display: none;
+    }
+}
