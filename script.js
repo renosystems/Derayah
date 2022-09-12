@@ -48,6 +48,30 @@ function openLeftSection(sectionName, elmnt) {
       }
     });
   });
+  const QuestionHeaders = document.querySelectorAll(
+    ".QuestionSec-infoDiv-toggel"
+  );
+  QuestionHeaders.forEach((accordionItemHeader) => {
+    accordionItemHeader.addEventListener("click", (event) => {
+      accordionItemHeader.classList.toggle("active");
+      const accordionItemBody2 = accordionItemHeader.nextElementSibling;
+      if (accordionItemHeader.classList.contains("active")) {
+        accordionItemBody2.style.maxHeight =
+          accordionItemBody2.scrollHeight + "px";
+      } else {
+        accordionItemBody2.style.maxHeight = 0;
+      }
+    });
+  });
+  const MegaMenuHeaders = document.querySelectorAll(
+    ".topMenu__text"
+  );
+  MegaMenuHeaders.forEach((MegaMenuHeader) => {
+    MegaMenuHeader.addEventListener("click", (event) => {
+      MegaMenuHeader.classList.toggle("active");
+      
+    });
+  });
   // accordionItemDiv2.forEach((accordionItemDiv2) => {
   //   accordionItemDiv2.addEventListener("click", (event) => {
   //     accordionItemDiv2.classList.toggle("active");

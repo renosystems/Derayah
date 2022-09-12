@@ -1,0 +1,153 @@
+.supportSec{
+    width: 100%;
+    height: 100%;
+    color: $light-color;
+    margin: 0;
+
+    @include devices(tablet) {
+        background: url(../Images/supportSecBg.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        text-align: right;
+        direction: rtl;
+        // padding: 300px;
+       
+        &-rightSec{
+            h1{
+                font-size: 28px;
+                font-weight: 400;
+                margin-right: 250px;
+                margin-top: 220px;
+            }
+            b{
+                font-weight: bold;
+            }
+            p{
+                font-size: 18px;
+                margin-top: 15px;
+                margin-right: 250px;
+                margin-bottom: 300px;
+            }
+        }
+        &-leftSec{
+            width: 400px;
+            padding: 25px;
+            border-radius: 30px;
+            background-color: $light-color;
+            color: $dark-color;
+            margin-top: 60px;
+            // margin-bottom: 70px;
+            &-send{
+                width: 100px;
+                height: 40px;
+                background-color: $primary-color;
+                border-radius: 20px;
+                color: $light-color;
+                direction: rtl;
+                padding: 10px 20px;
+                margin-top: 30px;
+                margin-right: 70%;
+                span{
+                    font-size: 15px;
+                    display: inline;
+                }
+            }
+            h1{
+                font-size: 20px;
+                font-weight: 500;
+                color: $primary-color;
+               }
+               p{
+                font-size: 14px;
+                // font-weight: 300;
+               }
+               input,select{
+                width: 100%;
+                padding: 10px 7px;
+                border: 1px solid $popup-text;
+                border-radius: 20px;
+                color: $popup-text;
+                
+               }
+               textarea{
+                width: 100%;
+                border: none;
+                border: 1px solid $popup-text;
+                border-radius: 20px;
+                color: $popup-text;
+                padding: 10px 15px;
+               }
+        }
+    }
+     @include devices(mobile) {
+        background: url(../Images/supportSecBgRes.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        &-rightSec{
+            text-align: center;
+            padding: 50px 0;
+            h1{
+                font-size: 22px;
+                font-weight: 400;
+                margin: auto;
+            }
+            p{
+                font-size: 18px;
+                margin: 10px 40px;
+            }
+        }
+        &-leftSec{
+            width: 99%;
+            padding: 25px;
+            border-radius: 30px;
+            background-color: $light-color;
+            color: $dark-color;
+            margin: auto;
+            text-align: right;
+            direction: rtl;
+            margin-bottom: 180px;
+            &-send{
+                width: 100px;
+                height: 40px;
+                background-color: $primary-color;
+                border-radius: 20px;
+                color: $light-color;
+                direction: rtl;
+                padding: 10px 20px;
+                margin-top: 30px;
+                margin-right: 70%;
+
+                span{
+                    font-size: 15px;
+                    display: inline;
+                }
+            }
+            h1{
+                font-size: 20px;
+                font-weight: 500;
+                color: $primary-color;
+               }
+               p{
+                font-size: 14px;
+                // font-weight: 300;
+               }
+               input,select{
+                width: 100%;
+                padding: 10px 7px;
+                border: 1px solid $popup-text;
+                border-radius: 20px;
+                color: $popup-text;
+                
+               }
+               textarea{
+                width: 100%;
+                border: none;
+                border: 1px solid $popup-text;
+                border-radius: 20px;
+                color: $popup-text;
+                padding: 10px 15px;
+               }
+        }
+    }
+}

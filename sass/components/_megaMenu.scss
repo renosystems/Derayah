@@ -1,0 +1,99 @@
+.MegaMenu{
+    width: 630px;
+    height: 350px;
+    background-color: $SerSection-div1;
+    text-align: right;
+    direction: rtl;
+    padding: 0;
+    position: absolute;
+    top: 170px;
+    right: 0;
+    border: none;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+    border-radius: 0px 0px 8px 8px;
+    &-rightDiv{
+        width: 330px;
+        height: 310px;
+        background-color: $menu-color;
+        margin-top: 0;
+    }
+    &-row{
+        width: 100%;
+        // height: 60px;
+        padding: 7px 0;
+        padding-right: 65px;
+        direction: rtl;
+        position: relative;
+        // margin-bottom: 10px;
+        line-height: 0.5rem;
+        background-color: transparent;
+        h5{
+            font-size: 14px;
+            font-weight: 500;
+        }
+        h6{
+            font-size: 12px;
+            font-weight: 400;
+        }
+        &-img{
+            width: 20px;
+            height: 20px;
+            display: inline;
+            position: absolute;
+            bottom: 20px;
+            left: 15px;
+        }
+        &-iconDiv{
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background-color: $SerSection-div1;
+            display: inline-block;
+            img{
+                width: 25px;
+                height: 25px;
+                margin-right: 7px;
+                margin-top: 7px;
+                color: $orange-color;
+            }
+        }
+        &-iconDiv.active{
+            background-color: $menu-color;
+        }
+        
+    }
+    &-row.active{
+        background-color: $SerSection-div1;
+    }
+}
+.MegaMenu2{
+    text-align: right;
+    direction: rtl;
+    background-color: $menu-color;
+    width: 370px;
+    // height: 310px;
+    border-radius: 0px 0px 8px 8px;
+    padding: 0;
+    padding: 40px 5px 24px 0;
+    position: absolute;
+    top: 170px;
+    right: 0;
+    border: none;
+}
+.MegaMenu3{
+    text-align: right;
+    direction: rtl;
+    background-color: $menu-color;
+    width: 270px;
+    // height: 310px;
+    border-radius: 0px 0px 8px 8px;
+    padding: 0;
+    padding: 40px 5px 24px 0;
+    position: absolute;
+    top: 170px;
+    right: 0;
+    border: none;
+}

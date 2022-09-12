@@ -1,12 +1,7 @@
-<svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:anim="http://www.w3.org/2000/anim" anim="" anim:transform-origin="50% 50%" anim:duration="0.5" anim:ease="power1.inOut">
-  <g id="7b31dfbf92fa3aa2bc0fbeb0ffb6e384" clip-path="url(#clip0_328_11258)">
-    <path id="1759c3d5084f6ec89fd43196b2839fe2" d="M8.50016 15.1666C12.1821 15.1666 15.1668 12.1818 15.1668 8.49992C15.1668 4.81802 12.1821 1.83325 8.50016 1.83325C4.81826 1.83325 1.8335 4.81802 1.8335 8.49992C1.8335 12.1818 4.81826 15.1666 8.50016 15.1666Z" stroke="#F58026" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-    <path id="e582c5c5eea6b4fa3ca7202b761d28f2" d="M1.8335 8.5H15.1668" stroke="#F58026" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-    <path id="ef434dfb63d6a605ed83cd1ef3502b5d" d="M8.50016 1.83325C10.1677 3.65882 11.1153 6.02794 11.1668 8.49992C11.1153 10.9719 10.1677 13.341 8.50016 15.1666C6.83264 13.341 5.88499 10.9719 5.8335 8.49992C5.88499 6.02794 6.83264 3.65882 8.50016 1.83325V1.83325Z" stroke="#F58026" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:anim="http://www.w3.org/2000/anim" anim="" anim:transform-origin="50% 50%" anim:duration="0.5" anim:ease="power1.inOut">
+  <g id="74de283c305131f77aa0a1b2633eb3a0">
+    <path id="11a32c26a10768faf64ff6531f823b2b" d="M12.5 22C18.0228 22 22.5 17.5228 22.5 12C22.5 6.47715 18.0228 2 12.5 2C6.97715 2 2.5 6.47715 2.5 12C2.5 17.5228 6.97715 22 12.5 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path id="a3d84cab1efa50610b9f8c61377041d1" d="M2.5 12H22.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path id="e62a4dea6c103c805d6bce08a515f1bd" d="M12.5 2C15.0013 4.73835 16.4228 8.29203 16.5 12C16.4228 15.708 15.0013 19.2616 12.5 22C9.99872 19.2616 8.57725 15.708 8.5 12C8.57725 8.29203 9.99872 4.73835 12.5 2V2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
   </g>
-  <defs>
-    <clipPath id="clip0_328_11258">
-      <rect width="16" height="16" fill="white" transform="translate(0.5 0.5)"></rect>
-    </clipPath>
-  </defs>
 </svg>
