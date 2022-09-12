@@ -18,19 +18,27 @@ function openLeftSection(sectionName, elmnt) {
     document.getElementById("TitleText").textContent=elmnt.children[1].textContent;
     document.getElementById("TitleText").style.width='270px';
   }
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
+  function openNav(currentNav) {
+    document.getElementById(currentNav).style.width = "100%";
   }
-  function closeNav() {
+  function closeNav(currentNav) {
     document.getElementById("mySidenav").style.width = "0";
+    document.getElementById(currentNav).style.width = "0";
+  }
+  function backNav(currentNav) {
+    document.getElementById(currentNav).style.width = "0";
   }
   
   const accordionItemHeaders2 = document.querySelectorAll(
-    ".accordionn-item-headerr2"
+    ".SidenavInvest-accordion"
+  );
+  const accordionItemDiv2 = document.querySelectorAll(
+    ".SidenavInvest-row"
   );
   accordionItemHeaders2.forEach((accordionItemHeader2) => {
     accordionItemHeader2.addEventListener("click", (event) => {
       accordionItemHeader2.classList.toggle("active");
+      accordionItemHeader2.firstElementChild.classList.toggle("active");
       const accordionItemBody2 = accordionItemHeader2.nextElementSibling;
       if (accordionItemHeader2.classList.contains("active")) {
         accordionItemBody2.style.maxHeight =
@@ -40,4 +48,15 @@ function openLeftSection(sectionName, elmnt) {
       }
     });
   });
+  // accordionItemDiv2.forEach((accordionItemDiv2) => {
+  //   accordionItemDiv2.addEventListener("click", (event) => {
+  //     accordionItemDiv2.classList.toggle("active");
+  //   });
+  // });
+
+  var myModal = document.getElementById('myModal')
+  var myInput = document.getElementById('myInput')
   
+  myModal.addEventListener('shown.bs.modal', function () {
+    myInput.focus()
+  })

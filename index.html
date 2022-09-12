@@ -121,7 +121,7 @@
         <div class="col-6"><img src="./Images/logo.png" alt=""></div>
         <div class="col-6 text-start">
           <p>تسجيل الدخول</p>
-          <i class="fa-solid fa-bars" onclick="openNav()"></i>
+          <i class="fa-solid fa-bars" onclick="openNav('mySidenav')"></i>
         </div>
       </div>
       <!-- End navBar responsive -->
@@ -140,85 +140,56 @@
               <i class="fa fa-close"></i>
           </div>
         </div>
-        <div class="theaccordion">
-          <div class="accordionn-itemm2">
-            <div
-              class="accordionn-item-headerr2">
+        <div class="sidenav-theaccordion">
+          <div class="sidenav-itemm2">
+            <div onclick="openNav('SidenavInvest')"
+              class="sidenav-item-headerr2">
               الاستثمار
             </div>
-            <div class="accordionn-item-bodyy2">
-              <div
-                class="accordionn-item-body-contentt2">
-                <div class="my-3"> <span> Lorem ipsum.</span></div>
-              </div>
-            </div>
           </div>
-          <div class="accordionn-itemm2">
-            <div
-              class="accordionn-item-headerr2">
+          <div class="sidenav-itemm2">
+            <div onclick="openNav('SidenavTrading')"
+              class="sidenav-item-headerr2">
               التداول
             </div>
-            <div class="accordionn-item-bodyy2">
-              <div
-                class="accordionn-item-body-contentt2">
-                Lorem ipsum.
-              </div>
-            </div>
           </div>
 
-          <div class="accordionn-itemm2">
-            <div
-              class="accordionn-item-headerr2">
+          <div class="sidenav-itemm2">
+            <div onclick="openNav('SidenavFinance')"
+              class="sidenav-item-headerr2">
               التمويل
             </div>
-            <div class="accordionn-item-bodyy2">
-              <div
-                class="accordionn-item-body-contentt2">
-                Lorem ipsum.
-              </div>
-            </div>
           </div>
 
-          <div class="accordionn-itemm2">
-            <div class="px-4 Tbold">
+          <div class="sidenav-itemm2">
+            <div class="mb-3 Tbold">
               دراية سمارت
             </div>
           </div>
 
-          <div class="accordionn-itemm2">
-            <div
-              class="accordionn-item-headerr2">
+          <div class="sidenav-itemm2">
+            <div onclick="openNav('SidenavNews')"
+              class="sidenav-item-headerr2">
               الاخبار والمقالات
             </div>
-            <div class="accordionn-item-bodyy2">
-              <div
-                class="accordionn-item-body-contentt2">
-                Lorem ipsum.
-              </div>
-            </div>
           </div>
-          <div class="accordionn-itemm2">
-            <div
-              class="accordionn-item-headerr2">
+          <div class="sidenav-itemm2">
+            <div onclick="openNav('SidenavAbout')"
+              class="sidenav-item-headerr2">
               عن دراية
             </div>
-            <div class="accordionn-item-bodyy2">
-              <div
-                class="accordionn-item-body-contentt2">
-                Lorem ipsum.
-              </div>
-            </div>
+          
           </div>
 
         </div>
         <div class="me-4 mt-3">
-          <p class="info">الدعم الفني</p>
+          <p class="sidenav-info">الدعم الفني</p>
         </div>
         <div class="me-4">
-          <p class="info">الاتصال بنا</p>
+          <p class="sidenav-info">الاتصال بنا</p>
         </div>
-        <div class="me-4">
-          <p class="info">لنتصل بك !</p>
+        <div class="me-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <p class="sidenav-info">لنتصل بك !</p>
         </div>
         <div class="mt-5 mx-4">
           <button class=" btn btn--rounded--sucess rounded" type="submit">فتح حساب
@@ -227,6 +198,256 @@
         </div>
       </div>
 
+      <div id="SidenavInvest" class="sidenav SidenavInvest">
+        <div class="px-3 SidenavInvest-topDiv">
+          <div class="SidenavInvest-close"><i class="fa fa-close" onclick="closeNav('SidenavInvest')"></i></div>
+          <div class="SidenavInvest-back"><i class="fa fa-arrow-right" onclick="backNav('SidenavInvest')"></i></div>
+        </div>
+        <div class="SidenavInvest-Title"><h1>الاستثمار</h1></div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_box.svg" alt=""></div>
+          <h5>سوبر ماركت الصناديق الاستثمارية</h5>
+          <h6>سوبر ماركت الصناديق الاستثمارية</h6>
+        </div>
+        <div class="SidenavInvest-accordion">
+          <div class="SidenavInvest-accordion-iconDiv"><img src="./Images/fi_copy.svg" alt=""></div>
+          <h5>الاستثمارات البديلة</h5>
+          <h6>الاستثمارات البديلة<h6>
+        </div>
+        <div class="SidenavInvest-accordion-body">
+          <div class="my-3">
+            <h5>مقارنة انواع الاستثمارات البديلة </h5>
+            <h6>صندوق دراية ريت</h6>
+          </div>
+          <div class="my-3">
+            <h5>صندوق دراية ريت</h5>
+            <h6>صندوق دراية ريت</h6>
+          </div>
+          <div class="my-3">
+            <h5>صناديق دراية العقارية المدرة للدخل</h5>
+            <h6>صناديق دراية العقارية المدرة للدخل</h6>
+          </div>
+          <div class="my-3">
+            <h5>صناديق دراية للتطوير العقاري</h5>
+            <h6>صناديق دراية للتطوير العقاري</h6>
+          </div>
+        </div>
+
+        <div class="SidenavInvest-accordion">
+          <div class="SidenavInvest-accordion-iconDiv"><img src="./Images/fi_bar-chart-2.svg" alt=""></div>
+          <h5>صناديق الأسهم</h5>
+          <h6>صناديق الأسهم<h6>
+        </div>
+        <div class="SidenavInvest-accordion-body">
+          <div class="my-3">
+            <h5>مقارنة انواع صناديق الأسهم</h5>
+            <h6>صندوق دراية ريت</h6>
+          </div>
+          <div class="my-3">
+            <h5>صناديق دراية الخليجي لأسهم النمو والدخل</h5>
+            <h6>صناديق دراية العقارية المدرة للدخل</h6>
+          </div>
+          <div class="my-3">
+            <h5>صناديق دراية المرن للأسهم السعودية</h5>
+            <h6>صناديق دراية للتطوير العقاري</h6>
+          </div>
+        </div>
+        <div class="SidenavInvest-accordion">
+          <div class="SidenavInvest-accordion-iconDiv"><img src="./Images/fi_credit-card.svg" alt=""></div>
+          <h5>ادارة المحافظ الخاصة</h5>
+          <h6>ادارة المحافظ الخاصة</h6>
+        </div>
+        <div class="SidenavInvest-accordion-body">
+          <div class="my-3">
+            <h5>الأفراد</h5>
+            <h6>صندوق دراية ريت</h6>
+          </div>
+          <div class="my-3">
+            <h5>الشركات</h5>
+            <h6>صناديق دراية العقارية المدرة للدخلh6>
+          </div>
+        </div>
+        <div class="SidenavInvest-accordion">
+          <div class="SidenavInvest-accordion-iconDiv"><img src="./Images/fi_compass.svg" alt=""></div>
+          <h5>الاستشارات الاستثمارية</h5>
+          <h6>الاستشارات الاستثمارية</h6>
+        </div>
+        <div class="SidenavInvest-accordion-body">
+          <div class="my-3">
+            <h5>الأفراد</h5>
+            <h6>صندوق دراية ريت</h6>
+          </div>
+          <div class="my-3">
+            <h5>الشركات</h5>
+            <h6>صناديق دراية العقارية المدرة للدخلh6>
+          </div>
+        </div>
+      </div>
+
+      <div id="SidenavTrading" class="sidenav SidenavInvest">
+        <div class="px-3 SidenavInvest-topDiv">
+          <div class="SidenavInvest-close"><i class="fa fa-close" onclick="closeNav('SidenavTrading')"></i></div>
+          <div class="SidenavInvest-back"><i class="fa fa-arrow-right" onclick="backNav('SidenavTrading')"></i></div>
+        </div>
+        <div class="SidenavInvest-Title"><h1>التداول</h1></div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_copy.svg" alt=""></div>
+          <h5>مقارنة انواع التداول</h5>
+          <h6>سوبر ماركت الصناديق الاستثمارية</h6>
+        </div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_columns.svg" alt=""></div>
+          <h5>منصة دراية</h5>
+          <h6>سوبر ماركت الصناديق الاستثمارية</h6>
+        </div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_globe.svg" alt=""></div>
+          <h5>منصة دراية</h5>
+          <h6>سوبر ماركت الصناديق الاستثمارية</h6>
+        </div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_trending-up.svg" alt=""></div>
+          <h5>تداول أدوات الدخل الثابت<br> (الصكوك والسندات)</h5>
+          <h6>سوبر ماركت الصناديق الاستثمارية</h6>
+        </div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_dollar-sign.svg" alt=""></div>
+          <h5>الأسعار والرسوم</h5>
+          <h6>سوبر ماركت الصناديق الاستثمارية</h6>
+        </div>
+
+      </div>
+
+      <div id="SidenavFinance" class="sidenav SidenavInvest">
+        <div class="px-3 SidenavInvest-topDiv">
+          <div class="SidenavInvest-close"><i class="fa fa-close" onclick="closeNav('SidenavFinance')"></i></div>
+          <div class="SidenavInvest-back"><i class="fa fa-arrow-right" onclick="backNav('SidenavFinance')"></i></div>
+        </div>
+        <div class="SidenavInvest-Title"><h1>التمويل</h1></div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_copy.svg" alt=""></div>
+          <h5>مقارنة انواع التمويل</h5>
+          <h6>التمويل بالمرابحة</h6>
+        </div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_shuffle.svg" alt=""></div>
+          <h5>التمويل بالمرابحه</h5>
+          <h6>التمويل بالمرابحة</h6>
+        </div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_refresh-ccw.svg" alt=""></div>
+          <h5>التداول بالهامش</h5>
+          <h6>التداول بالهامش</h6>
+        </div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_trending-up.svg" alt=""></div>
+          <h5>التمويل المجاني</h5>
+          <h6>التمويل المجاني</h6>
+        </div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_alert-circle.svg" alt=""></div>
+          <h5>مفاهيم تهمك</h5>
+          <h6>مفاهيم تهمك</h6>
+        </div>
+
+      </div>
+
+      <div id="SidenavNews" class="sidenav SidenavInvest">
+        <div class="px-3 SidenavInvest-topDiv">
+          <div class="SidenavInvest-close"><i class="fa fa-close" onclick="closeNav('SidenavNews')"></i></div>
+          <div class="SidenavInvest-back"><i class="fa fa-arrow-right" onclick="backNav('SidenavNews')"></i></div>
+        </div>
+        <div class="me-4">
+          <h1>الأخبار والمقالات</h1>
+          <div class="SidenavInvest-line"></div>
+        </div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_rss.svg" alt=""></div>
+          <h5>اخبار ومستجدات دراية</h5>
+          <h6>اخبار ومستجدات دراية</h6>
+        </div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_file-text.svg" alt=""></div>
+          <h5>ابرز المقالات</h5>
+          <h6>ابرز المقالات</h6>
+        </div>
+      </div>
+
+      <div id="SidenavAbout" class="sidenav SidenavInvest">
+        <div class="px-3 SidenavInvest-topDiv">
+          <div class="SidenavInvest-close"><i class="fa fa-close" onclick="closeNav('SidenavAbout')"></i></div>
+          <div class="SidenavInvest-back"><i class="fa fa-arrow-right" onclick="backNav('SidenavAbout')"></i></div>
+        </div>
+        <div class="SidenavInvest-Title"><h1>عن دراية</h1></div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_smile.svg" alt=""></div>
+          <h5>نبذة عن دراية</h5>
+          <h6>نبذة عن دراية</h6>
+        </div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_copy.svg" alt=""></div>
+          <h5>مقارنة بين دراية والجهات الاخري</h5>
+          <h6>نبذة عن دراية/h6>
+        </div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_award.svg" alt=""></div>
+          <h5>الهيئة الشرعية</h5>
+          <h6>الهيئة الشرعية</h6>
+        </div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_users.svg" alt=""></div>
+          <h5>مجلس ادارتنا</h5>
+          <h6>مجلس ادارتنا</h6>
+        </div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_flag.svg" alt=""></div>
+          <h5>فريق دراية</h5>
+          <h6>فريق دراية</h6>
+        </div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_grid.svg" alt=""></div>
+          <h5>الهيكل التنظيمي</h5>
+          <h6>الهيكل التنظيمي</h6>
+        </div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_file-text.svg" alt=""></div>
+          <h5>التقارير</h5>
+          <h6>التقارير والمقالات</h6>
+        </div>
+        <div class="SidenavInvest-row">
+          <div class="SidenavInvest-row-iconDiv"><img src="./Images/fi_columns.svg" alt=""></div>
+          <h5>الاجراءات</h5>
+          <h6>الاجراءات</h6>
+        </div>
+
+      </div>
+
+      <div class="modal fade SidenavInvest-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+            <div class="modal-body SidenavInvest-modal-body">
+              <div class="px-3 SidenavInvest-topDiv">
+                <div class="SidenavInvest-close"  data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></div>
+              </div>
+              <h1>لنتصل بك</h1>
+              <p class="my-4">أرسل لنا اسمك ورقم هاتفك, وسوف <br> نتصل بك في اقرب وقت ممكن.</p>
+              <p>الاسم الثلاثي</p>
+              <input type="text" placeholder="الاسم الثلاثي">
+              <p class="mt-4">رقم الهاتف</p>
+              <input type="number" placeholder="901xxxxxxxx+">
+              <p class="mt-4">نوع الاستفسار</p>
+              <select name="cars" id="cars">
+                <option value="volvo">اختر نوع الاستفسار</option>
+              </select>
+              <div class="SidenavInvest-modal-body-send">
+                <span>ارسال</span>
+                <i class="fa fa-arrow-left"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <!-- hero slider -->
       <div id="carouselExampleSlidesOnly" class="carousel slide"
         data-bs-ride="carousel">
