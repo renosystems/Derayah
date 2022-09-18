@@ -40,8 +40,8 @@
                       </a>
                       <div class="MegaMenu dropdown-menu" aria-labelledby="navbarDropdown">
                         <div class="MegaMenu-rightDiv">
-                            <div class="MegaMenu-row">
-                                <div class="MegaMenu-row-iconDiv"><img src="./Images/fi_box.svg"
+                            <div class="MegaMenu-row active">
+                                <div class="MegaMenu-row-iconDiv active"><img src="./Images/fi_box.svg"
                                     alt=""></div>
                                 <h5>سوبر ماركت الصناديق الاستثمارية</h5>
                                 <h6>سوبر ماركت الصناديق الاستثمارية</h6>
@@ -244,17 +244,29 @@
                         </div>
                       </div>
                     </li>
-                    <img class="navbar-brand" src="./Images/icon-search.png"/>
                   </ul>
-    
                 </div>
-                <form class="d-flex ms-5">
-                  <button class=" btn btn--rounded--sucess" type="submit">فتح حساب
-                    جديد</button>
-                  <button class=" btn btn--rounded" type="submit">تسجيل الدخول</button>
-                </form>
+                <div id="searchSection">
+                    <img class="topMenu-searchIcon ms-4" id="searchIcon" src="./Images/icon-search.png"/>
+                    <form class="d-flex ms-5" >
+                        <button class=" btn btn--rounded--sucess" type="submit">فتح حساب
+                        جديد</button>
+                        <button class=" btn btn--rounded" type="submit">تسجيل الدخول</button>
+                    </form>
+                </div>
+                <div id="searchSectionclose" class="mb-4">
+                    <img class="topMenu-searchIcon topMenu-searchIconClose ms-4 active" id="searchIconclose" src="./Images/SearchiconAnimated.svg"/>
+                </div>
               </div>
             </nav>
+            <div class="topMenu-SearchDiv row active" id="SearchDiv">
+                <div class="col-lg-10">
+                <input type="text"></div>
+                <div class="topMenu-SearchDiv-send col-lg-2">
+                    <span>بحث</span>
+                    <i class="fa fa-arrow-left"></i>
+                </div>
+            </div>
 
         <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"

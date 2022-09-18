@@ -5,9 +5,9 @@
     height: 90px;
     background-color: $menu-color;
     width: 95%;
-    direction: rtl;
     font-size: 18px;
     font-weight: bold;
+    // position: relative;
 
     &__text {
       color: $text-color;
@@ -19,6 +19,54 @@
     &-brand{
       width: 80px;
       height: 60px;
+      display: inline-block;
+    }
+    &-searchIcon{
+      position: absolute;
+    }
+    &-searchIconClose{
+      width: 30px;
+      height: 30px;
+    }
+    &-searchIconClose.active{
+      display: none;
+    }
+    &-SearchDiv{
+      width: 100%;
+      height: 70px;
+      background-color: $SerSection-div1;
+      margin: 0;
+      padding: 10px 50px 5px 30px;
+      &-send{
+        width: 90px;
+        height: 40px;
+        background-color: $primary-color;
+        border-radius: 20px;
+        color: $light-color;
+        direction: rtl;
+        padding: 5px 17px;
+        display: inline-block;
+        span{
+            font-size: 15px;
+            display: inline;
+            font-weight: 500;
+        }
+    }
+    input{
+      width: 100%;
+      height: 45px;
+      display: inline-block;
+      border-radius: 26px;
+      border: none;
+      border: 1px solid rgba(18, 17, 39, 0.12);
+
+    }
+    }
+    &-SearchDiv.active{
+      display: none;
+    }
+    #searchSection.active{
+      display: none;
     }
   }
 

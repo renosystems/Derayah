@@ -43,6 +43,24 @@ html, body {
   font-size: 18px;
 }
 
+.topMenu {
+  direction: rtl;
+  text-align: right;
+}
+.topMenu-searchIcon {
+  left: 25%;
+}
+
+.topMenuRes {
+  direction: rtl;
+  text-align: right;
+}
+
+.navBarRes {
+  direction: rtl;
+  text-align: right;
+}
+
 .card-row {
   display: flex;
   margin-bottom: 42px;
@@ -65,7 +83,6 @@ html, body {
     height: 90px;
     background-color: #F9F9FB;
     width: 95%;
-    direction: rtl;
     font-size: 18px;
     font-weight: bold;
   }
@@ -79,6 +96,53 @@ html, body {
   .topMenu-brand {
     width: 80px;
     height: 60px;
+    display: inline-block;
+  }
+  .topMenu-searchIcon {
+    position: absolute;
+  }
+  .topMenu-searchIconClose {
+    width: 30px;
+    height: 30px;
+  }
+  .topMenu-searchIconClose.active {
+    display: none;
+  }
+  .topMenu-SearchDiv {
+    width: 100%;
+    height: 70px;
+    background-color: #ededf4;
+    margin: 0;
+    padding: 10px 50px 5px 30px;
+  }
+  .topMenu-SearchDiv-send {
+    width: 90px;
+    height: 40px;
+    background-color: #510B76;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    direction: rtl;
+    padding: 5px 17px;
+    display: inline-block;
+  }
+  .topMenu-SearchDiv-send span {
+    font-size: 15px;
+    display: inline;
+    font-weight: 500;
+  }
+  .topMenu-SearchDiv input {
+    width: 100%;
+    height: 45px;
+    display: inline-block;
+    border-radius: 26px;
+    border: none;
+    border: 1px solid rgba(18, 17, 39, 0.12);
+  }
+  .topMenu-SearchDiv.active {
+    display: none;
+  }
+  .topMenu #searchSection.active {
+    display: none;
   }
 }
 @media only screen and (max-width: 481px) {
@@ -121,6 +185,7 @@ html, body {
     font-weight: 400;
     color: rgb(255, 255, 255);
     padding-bottom: 45%;
+    margin: 0;
   }
   .side-menu--img {
     width: 40px;
@@ -1773,10 +1838,8 @@ html, body {
     height: 50px;
     margin: 0;
     background-color: #3C0857;
-    text-align: left;
     color: rgb(255, 255, 255);
     padding: 5px 0;
-    direction: rtl;
   }
   .topMenuRes span {
     font-size: 18px;
@@ -1808,7 +1871,6 @@ html, body {
     margin: 0;
     background-color: #F9F9FB;
     color: #3C0857;
-    direction: rtl;
   }
   .navBarRes p {
     font-size: 12px;
@@ -2886,9 +2948,11 @@ html, body {
 }
 .MegaMenu-rightDiv {
   width: 330px;
-  height: 310px;
+  height: 320px;
   background-color: #F9F9FB;
   margin-top: 0;
+  padding-top: 15px;
+  padding-right: 10px;
 }
 .MegaMenu-row {
   width: 100%;

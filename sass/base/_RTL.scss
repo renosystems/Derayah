@@ -1,0 +1,50 @@
+$siteLanguage: Arabic;
+
+@if $siteLanguage == Arabic{
+    $textAlign: right;
+    $direction: rtl;   
+    .topMenu{
+        direction: $direction;
+        text-align: $textAlign;
+        &-searchIcon{
+            left: 25%;
+          }
+    }
+    .topMenuRes{
+        direction: $direction;
+        text-align: $textAlign;
+    }
+    .navBarRes{
+        direction: $direction;
+        text-align: $textAlign;
+    }
+    // .WhyInvestment{
+    //     direction: $direction;
+    //     text-align: $textAlign;
+    // }
+}
+@if $siteLanguage == English{
+    $textAlign: left;
+    $direction: ltr;  
+    
+    .topMenu{
+        direction: $direction;
+        text-align: $textAlign;
+        &-searchIcon{
+            right: 30%;
+          }
+    }
+    .topMenuRes{
+        direction: $direction;
+        text-align: $textAlign;
+    }
+    .navBarRes{
+        direction: $direction;
+        text-align: $textAlign;
+    }
+    .WhyInvestment{
+        direction: $direction;
+        text-align: $textAlign;
+    }
+}
+

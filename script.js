@@ -72,11 +72,20 @@ function openLeftSection(sectionName, elmnt) {
       
     });
   });
-  // accordionItemDiv2.forEach((accordionItemDiv2) => {
-  //   accordionItemDiv2.addEventListener("click", (event) => {
-  //     accordionItemDiv2.classList.toggle("active");
-  //   });
-  // });
+  
+  const Search_icon=document.getElementById('searchIcon');
+  Search_icon.addEventListener("click",function(){
+    document.getElementById('searchSection').classList.toggle("active");
+    document.getElementById('searchIconclose').classList.toggle("active");
+    document.getElementById('SearchDiv').classList.toggle("active");
+  });
+
+  const Search_iconClose=document.getElementById('searchIconclose');
+  Search_iconClose.addEventListener("click",function(){
+    document.getElementById('searchSection').classList.toggle("active");
+    document.getElementById('searchIconclose').classList.toggle("active");
+    document.getElementById('SearchDiv').classList.toggle("active");
+  });
 
   var myModal = document.getElementById('myModal')
   var myInput = document.getElementById('myInput')
@@ -84,3 +93,9 @@ function openLeftSection(sectionName, elmnt) {
   myModal.addEventListener('shown.bs.modal', function () {
     myInput.focus()
   })
+
+  var changeLan=document.getElementById('changeLanguage');
+  changeLan.addEventListener('click',function(){
+    var element = document.getElementsByTagName("BODY")[0];
+    element.setAttribute("dir", "ltr");
+  });

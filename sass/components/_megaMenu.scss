@@ -13,9 +13,11 @@
     border-radius: 0px 0px 8px 8px;
     &-rightDiv{
         width: 330px;
-        height: 310px;
+        height: 320px;
         background-color: $menu-color;
         margin-top: 0;
+        padding-top: 15px;
+        padding-right: 10px;
     }
     &-row{
         width: 100%;
